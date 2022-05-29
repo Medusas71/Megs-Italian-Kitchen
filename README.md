@@ -35,13 +35,42 @@
 <a id="description"></a>
 # Description  
 
+I am currently studying the Full Stack Development Course through Code Institute. Part of the course I am required 
+to complete 4 milestone projects. Meg's Italian Kitchen is my 3rd milestone project which is part of the Python and Data Centric Development.  
+
+Meg's Italian Kitchen has been created for all lovers of Italian food.  
+The purpose of this website is to have a variety of Italian recipes display so people can create mouth watering meals. 
+The website will also accommodate for users that would like to add new recipes and amend and delete their own recipes when needed.
+
 [Back to Table of Contents](#table-of-contents)
 
 <a id="user-experience-(ux)"></a>
 # User Experience (UX)
 
 <a id="user-stories"></a>
-## User Stories
+## User Stories  
+
+First Time Visitor Goals
+
+* As a first time visitor to the website, I would like to:  
+  * search for Italian recipes
+  * view various Italian recipes
+  * have the ability to search for Italian recipes
+  * have the meals in categories so they are easier to find
+  * add a recipe to my favourites
+  * be able to have the opportunity to register so I can add new recipes to the database
+  * be able to contact the site owner to ask questions if required
+
+Returning Visitor Goals
+
+* As a returning user to the website, I would like to:
+  * have the ability to log in so I can view my recipes
+  * have the ability to search for recipes whilst logged in
+  * have the ability to add a recipe
+  * have the ability to delete my own recipes
+  * add a recipe to my favourites
+  * delete a recipe from my favourites
+  * be able to contact the site owner to ask questions if required
 
 [Back to Table of Contents](#table-of-contents)
 
