@@ -115,6 +115,24 @@ users expect from an online cookbook.
 <a id="skeleton"></a>
 ### 4. Skeleton
 
+The [wireframes]() have been created using [Balsamiq](https://balsamiq.com/) and were created 
+for Desktop, Tablet and Phone.
+
+Here are the individual wireframes:
+
+* [Home Page Wireframe]()
+* [Entree Wireframe]()
+* [Mains Wireframe]()
+* [Dessert Wireframe]()
+* [Register Wireframe]()
+* [Log In Wireframe]()
+* [Add Recipe Wireframe]()
+* [My Recipes Wireframe]()
+* [Edit Recipe Wireframe]()
+* [Favourites Wireframe]()
+* [Contact Us Wireframe]()
+* [404 Error Wireframe]()
+
 <a id="surface"></a>
 ### 5. Surface 
 
