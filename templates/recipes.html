@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2> yes this works</h2>
-
     {% for recipe in recipes %}
         {{ recipe.category }}<br>
         {{ recipe.recipe_name }}<br>
@@ -14,4 +12,4 @@
         {{ recipe.method }}<br>
     {% endfor %}
 
-    {% endblock %}
+{% endblock %}
