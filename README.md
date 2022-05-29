@@ -163,11 +163,41 @@ Imagery
 <a id="technologies-used"></a>
 # Technologies Used
 
-Languages Used
+**Languages**
 
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+3. [Python 3](https://www.python.org/)
 
-Frameworks, Libraries, Programs and Resources Used
+**Databases**
 
+1. [MongoDB Atlas](https://www.mongodb.com/)
+
+**Frameworks and Libraries**
+
+1. [DNSPython](https://www.dnspython.org/) - is a toolkit for Python
+1. [Flask](https://palletsprojects.com/p/flask/) - is a lightweight WSGI web application framework
+1. [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) - bridges Flask and PyMongo and provides some convenience helpers
+1. [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - is a templating engine for Python
+1. [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) - used to initialise the Materialize CSS components
+1. [Materialize](https://materializecss.com/getting-started.html) - to make the website responsive and use custom components
+1. [PyMongo](https://pymongo.readthedocs.io/en/stable/) - is a Python distribution containing tools for working with MongoDB
+1. [Werkzeug](https://werkzeug.palletsprojects.com/en/2.1.x/) - is a comprehensive WSGI web application library and was used for security features
+
+**Programs and Resources**
+
+1. [Balsamiq](https://balsamiq.com/) - wireframes
+1. [Code Institute Course Content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
+1. [Coolors](https://coolors.co/) - to display colour palette
+1. [Font Awesome](https://fontawesome.com/v5/search) - for their icons
+1. [Git](https://git-scm.com/) - version control
+1. [GitHub](https://github.com/) - used to store the project files
+1. [Gitpod](https://www.gitpod.io/) - IDE
+1. [Google Fonts](https://fonts.google.com/) - typography
+1. [Heroku](https://id.heroku.com/login) - a container-based cloud Platform as a Service (PaaS) used to deploy the project 
+1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture and resizing images
+1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
+1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
 
 [Back to Table of Contents](#table-of-contents)
 
