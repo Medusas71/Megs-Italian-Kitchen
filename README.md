@@ -115,23 +115,23 @@ users expect from an online cookbook.
 <a id="skeleton"></a>
 ### 4. Skeleton
 
-The [wireframes]() have been created using [Balsamiq](https://balsamiq.com/) and were created 
+The [wireframes](./static/documents/wireframes/megs-italian-kitchen.pdf) have been created using [Balsamiq](https://balsamiq.com/) and were created 
 for Desktop, Tablet and Phone.
 
 Here are the individual wireframes:
 
-* [Home Page Wireframe]()
-* [Entree Wireframe]()
-* [Mains Wireframe]()
-* [Dessert Wireframe]()
-* [Register Wireframe]()
-* [Log In Wireframe]()
-* [Add Recipe Wireframe]()
-* [My Recipes Wireframe]()
-* [Edit Recipe Wireframe]()
-* [Favourites Wireframe]()
-* [Contact Us Wireframe]()
-* [404 Error Wireframe]()
+* [Home Page Wireframe](static/images/readme-images/wireframes/homepage.png)
+* [Entree Wireframe](static/images/readme-images/wireframes/entree.png)
+* [Mains Wireframe](static/images/readme-images/wireframes/main.png)
+* [Dessert Wireframe](static/images/readme-images/wireframes/dessert.png)
+* [Register Wireframe](static/images/readme-images/wireframes/register.png)
+* [Log In Wireframe](static/images/readme-images/wireframes/login.png)
+* [Add Recipe Wireframe](static/images/readme-images/wireframes/add-recipe.png)
+* [My Recipes Wireframe](static/images/readme-images/wireframes/my-recipes.png)
+* [Edit Recipe Wireframe](static/images/readme-images/wireframes/edit-recipe.png)
+* [Favourites Wireframe](static/images/readme-images/wireframes/favourites.png)
+* [Contact Us Wireframe](static/images/readme-images/wireframes/contact-us.png)
+* [404 Error Wireframe](static/images/readme-images/wireframes/404-error.png)
 
 <a id="surface"></a>
 ### 5. Surface 
