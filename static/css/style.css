@@ -1,6 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Simonetta&display=swap');
 
+/*---------------------- Global Settings */
+
+.green {
+    background-color: #f4f5f0 !important;
+    color: #008c45;
+}
+
+.red {
+    background-color: #f4f5f0 !important;
+    color: #cd212a;
+}
+
+/*---------------------- Navbar */
+/* overwrite Materialize navbar */
+
+nav {
+    background-color: #f4f5f0;
+}
+
+nav .brand-logo {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav ul a {
+    font-weight: bold;
+}
 
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+.font {
+    font-family: "Simonetta", sans-serif;
 }
