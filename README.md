@@ -141,6 +141,11 @@ Colour Scheme
 
 Typography
 
+* The fonts were sourced from [Google Fonts](https://fonts.google.com/).
+* Simonetta is used for all the headings with sans-serif as the fallback font. This font was 
+chosen from an [Italian Fonts Google search](https://www.1001fonts.com/regular+italian+google-web-fonts.html).
+* Open Sans is the main font used through the website with sans-serif as the fallback font. This font 
+was chosen as Simonetta is a serif font and Open Sans is a sans serif font and these both compliment each other.
 
 Imagery
 
