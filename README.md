@@ -233,6 +233,7 @@ Imagery
 
 Code
 
+* Change colour on Flash Messages: https://stackoverflow.com/questions/44569040/change-color-of-flask-flash-messages
 
 Content  
 
