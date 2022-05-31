@@ -21,12 +21,20 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
+    """
+    Created recipe template
+    """
     recipes = mongo.db.recipes.find()
     return render_template("recipes.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Checks if registered user is in DB,
+    if not add them to DB,
+    if yes advise username already exists
+    """ 
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
