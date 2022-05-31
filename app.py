@@ -24,7 +24,7 @@ def get_recipes():
     """
     Created recipe template
     """
-    recipes = mongo.db.recipes.find()
+    recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
 
