@@ -42,3 +42,17 @@ nav .brand-logo {
 .flashes h4 {
     line-height: 2;
 }
+
+/*---------------------- Recipe Cards */
+
+.card,
+.card-image,
+.card-title {
+    background-color: #f4f5f0 !important;
+}
+
+.card-title {
+    margin-left: 20px;
+    font-family: "Open SansS", sans-serif;
+}
+
