@@ -35,3 +35,8 @@ nav ul a {
 .font {
     font-family: "Simonetta", sans-serif;
 }
+
+/*---------------------- Flash Messages */
+.flashes h4 {
+    line-height: 2;
+}
