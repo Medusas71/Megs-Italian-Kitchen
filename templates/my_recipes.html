@@ -33,7 +33,7 @@
                             because I require little markup to use effectively.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#" class="btn-small green">Edit</a>
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green">Edit</a>
                         <a href="#" class="btn-small red">Delete</a>
                     </div>                
                 </div>
