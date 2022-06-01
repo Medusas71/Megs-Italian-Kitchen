@@ -56,3 +56,8 @@ nav .brand-logo {
     font-family: "Open SansS", sans-serif;
 }
 
+/*---------------------- Add Recipe */
+
+.card-panel {
+    background-color: #f4f5f0;
+}
