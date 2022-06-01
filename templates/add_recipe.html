@@ -17,10 +17,10 @@
                 <div class="input-field col s12">
                     <i class="fas fa-folder-plus prefix"></i>
                     <select id="category" name="category" type="text" class="validate" required>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Entree</option>
-                        <option value="2">Main</option>
-                        <option value="3">Dessert</option>
+                        <option value="" disabled selected>Select Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category }}">{{ category.category }}</option>
+                        {% endfor %}
                     </select>
                     <label for="category">Category</label>
                 </div>
