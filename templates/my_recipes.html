@@ -4,11 +4,41 @@
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
-                <h3 class="center-align">
+                <!-- <h3 class="center-align">
                     {{ username }}'s Recipes
-                </h3>
+                </h3> -->
             </div>
         </div>
     </div>
+
+    {% for recipe in recipes %} 
+        <div class="row">      
+            <div class="col s12 m6">
+                <div class="card">     
+                    <div class="card-image">
+                        <img src="static/images/test_image.jpg">
+                    </div>
+                    <div>                    
+                        <span class="card-title">
+                            <strong>{{ recipe.recipe_name }}</strong>
+                            <p><em>by: {{ recipe.created_by }}</em></p>
+                        </span>
+                        <i class="far fa-heart heart red"></i>
+                    </div>
+                    <div class="category-name">
+                        <strong>{{ recipe.category }}</strong>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                            because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-small green">Edit</a>
+                        <a href="#" class="btn-small red">Delete</a>
+                    </div>                
+                </div>
+            </div>        
+        </div>
+    {% endfor %}
 
 {% endblock %}
