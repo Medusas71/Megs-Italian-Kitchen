@@ -46,9 +46,19 @@ nav .brand-logo {
 /*---------------------- Recipe Cards */
 
 .card,
-.card-image,
+.card-panel,
 .card-title {
     background-color: #f4f5f0 !important;
+}
+
+.card-image,
+.card-image img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card.horizontal {
+    max-width: 100%;
 }
 
 .card-title {
@@ -56,8 +66,11 @@ nav .brand-logo {
     font-family: "Open SansS", sans-serif;
 }
 
-/*---------------------- Add Recipe */
+.created_by {
+    margin-left: -220px;
 
-.card-panel {
-    background-color: #f4f5f0;
+}
+
+.col-width {
+    width: 50px;
 }
