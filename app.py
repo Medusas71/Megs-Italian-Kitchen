@@ -102,9 +102,10 @@ def my_recipes(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    recipes = list(mongo.db.recipes.find())
-    return render_template(
-        "my_recipes.html", username=username, recipes=recipes)
+    if session["user"]:
+        recipes = list(mongo.db.recipes.find())
+        return render_template(
+            "my_recipes.html", username=username, recipes=recipes)
 
 
 @app.route("/logout")
@@ -138,7 +139,7 @@ def add_recipe():
         flash("Recipe Successfully Added", category="green")
         return redirect(url_for("get_recipes"))
 
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category", 1)
     return render_template("add_recipe.html", categories=categories)
 
 
@@ -147,8 +148,23 @@ def edit_recipe(recipe_id):
     """
     allows user to edit a recipe in the db
     """
+    if request.method == "POST":
+        submit = {'$set': {
+            "category": request.form.get("category"),
+            "recipe_name": request.form.get("recipe_name"),
+            "prep_time": request.form.get("prep_time"),
+            "cook_time": request.form.get("cook_time"),
+            "servings": request.form.get("servings"),
+            "ingredients": request.form.get("ingredients"),
+            "method": request.form.get("method"),
+            "recipe_image": request.form.get("recipe_image"),
+            "created_by": session["user"]
+        }}
+        mongo.db.recipes.update_one({"_id": ObjectId(recipe_id)}, submit)
+        flash("Recipe Successfully Updated", category="green")
+
     recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category", 1)
     return render_template(
         "edit_recipe.html", recipe=recipes, categories=categories)
 
