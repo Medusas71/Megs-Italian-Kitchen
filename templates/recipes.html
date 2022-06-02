@@ -26,11 +26,11 @@
     </div>
     <!-- {% if recipes|length > 0 %} -->       
     {% for recipe in recipes %} 
-        <div class="col s12 m7 col-width">
-            <div class="card horizontal">
+        <div class="col s12 m7">
+            <div class="card small horizontal">
                 <div class="card-image">
-                    {% if recipes|length > 0 %}
-                        <img src="static/images/test_image.jpg">
+                    {% if recipes.recipe_image|length > 0 %}
+                        <img src="{{ recipe.recipe_image }}">
                     {% else %}
                         <img src="static/images/wine_setting.jpg">
                     {% endif %}
@@ -54,11 +54,7 @@
                         <a href="#">This is a link</a>
                         <a href="#">This is a link</a>
                     </div>       
-                        </div>                
-                    </div>       
                 </div>
-            </div>
-                </div>        
             </div>
         </div>
     {% endfor %}

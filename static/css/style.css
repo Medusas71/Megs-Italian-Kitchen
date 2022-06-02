@@ -51,15 +51,25 @@ nav .brand-logo {
     background-color: #f4f5f0 !important;
 }
 
-.card-image,
+/* .card-image,
 .card-image img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+} */
+
+.card.horizontal.small .card-image, 
+.card.horizontal.medium .card-image, 
+.card.horizontal.large .card-image {
+    height: 80%;
+    max-height: none;
+    margin: 10px;
+    overflow: hidden;
 }
 
-.card.horizontal {
+/* .card.horizontal {
     max-width: 100%;
-}
+} */
 
 .card-title {
     margin-left: 20px;
