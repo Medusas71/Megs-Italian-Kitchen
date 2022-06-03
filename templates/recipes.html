@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="center-align">All Recipes</h3>
+    <h3 class="center-align font-heading">All Recipes</h3>
 
     <div class="row">
         <div class="col s12">
@@ -40,8 +40,8 @@
                         <span class="card-title">
                             <strong>{{ recipe.recipe_name }}</strong>
                             <i class="far fa-heart heart red"></i>                            
-                        </span>
-                        <p class="created-by">by: {{ recipe.created_by }}</p>
+                        </span>                    
+                        <p class="created-by">by: {{ recipe.created_by }}</p>                        
                     </div>
                     <div class="category-name">
                         <strong>{{ recipe.category }}</strong>
