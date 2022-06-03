@@ -52,7 +52,7 @@
         </nav>
 
         <!-- mobile sidenav -->
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav font-heading text-shadow" id="mobile-demo">
             <li><h4 class="center-align">
                 <span class="green">Meg's</span>
                 <span class="red">Italian</span>
@@ -60,7 +60,7 @@
             <li><a href="#" class="green">Home</a></li>
             <li><a href="{{ url_for('get_recipes') }}" class="red">Recipes</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('add_recipe') }}" class="green">Add Recipes</a></li>
+                <li><a href="{{ url_for('add_recipe') }}" class="green">Add Recipe</a></li>
                 <li><a href="{{ url_for('my_recipes', username=session['user']) }}" class="red">My Recipes</a></li>
                 <li><a href="#" class="green">Favourites</a></li>
                 <li><a href="{{ url_for('logout') }}" class="red">Log Out</a></li>

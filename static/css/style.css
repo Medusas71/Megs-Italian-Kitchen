@@ -4,12 +4,16 @@
 
 .green {
     background-color: #f4f5f0 !important;
-    color: #007a3d;
+    color: #007a3d !important;
 }
 
 .red {
     background-color: #f4f5f0 !important;
-    color: #cd212a;
+    color: #cd212a !important;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 /*---------------------- Navbar */
@@ -23,6 +27,11 @@ nav {
 nav .brand-logo {
     margin-left: 20px;
     font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: #000;
 }
 
 .sidenav {
@@ -30,8 +39,12 @@ nav .brand-logo {
     font-weight: bold;
 }
 
+.sidenav li>a {
+    font-weight: bold;
+}
+
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
 }
 
 .font-heading {
@@ -80,3 +93,22 @@ nav .brand-logo {
     margin-left: 20px;
 }
 
+/*---------------------- Media Queries */
+
+/*---------------------- small devices (landscape phones, 576px and up) */
+
+@media screen and (min-width: 576px) {
+
+    nav .brand-logo {
+    font-size: 2.1rem;
+    }
+}
+
+/*----------------------- extra extra large devices (extra large desktops, 1920px and up) */
+
+@media screen and (min-width: 1920px) {
+    
+    nav .brand-logo {
+        font-size: 3.1rem;
+        }
+}
