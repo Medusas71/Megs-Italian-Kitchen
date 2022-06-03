@@ -138,6 +138,19 @@ Here are the individual wireframes:
 
 Colour Scheme
 
+* I wanted to use the [Italian Flag colours](https://colorswall.com/palette/248) for this project, which are green - #008c45, off white - #f4f5f0 and red - #cd212a. 
+* Unfortunately the green did not pass the accessibility test. I was able to use the off white and the red colour but had to change the green. The green was changed to #007A3D to comply with accessibility criteria.
+* I have used the red and green colour throughout the project for the navigation bar, buttons and flash messages. All background colours of the buttons, header and recipe cards I have used the off white colour of the italian flag.
+* The colours are well suited to the design of the site as if there is an error, the flash message will display in red and if everything works as intended then the flash message displays in green.
+* All other text is black #000.
+
+![4 Colours](static/images/readme-images/website-colours.jpg)
+Colours sourced using [Coolors](https://coolors.co/007a3d-f4f5f0-cd212a-000000)
+
+* The colours were checked through [WebAIM](https://webaim.org/resources/contrastchecker/) to ensure the final colours were accessible.
+
+![WebAIM Contrast Checker](static/images/readme-images/webaim-contrast-checker.jpg)
+![WebAIM Contrast Checker1](static/images/readme-images/webaim-contrast-checker1.jpg)
 
 Typography
 
