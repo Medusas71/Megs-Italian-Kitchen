@@ -17,14 +17,14 @@
             <!-- select category -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-folder-plus prefix"></i>
+                    <i class="fas fa-folder prefix"></i>
                     <select id="category" name="category" type="text" class="validate" required>
                         <option value="" disabled selected>Select Category</option>
                         {% for category in categories %}
                             <option value="{{ category.category }}">{{ category.category }}</option>
                         {% endfor %}
                     </select>
-                    <label for="category">Category</label>
+                    <label for="category">Select Category</label>
                 </div>
             </div>
             <!-- preparation time -->
@@ -32,7 +32,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix"></i>
                     <input id="prep_time" name="prep_time" type="text" class="validate" required>
-                    <label for="prep_time">Preparation Time</label>
+                    <label for="prep_time">Preparation Time eg: 10 mins</label>
                 </div>
             </div>
             <!-- cooking time -->
@@ -40,41 +40,48 @@
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix"></i>
                     <input id="cook_time" name="cook_time" type="text" class="validate" required>
-                    <label for="cook_time">Cooking Time</label>
+                    <label for="cook_time">Cooking Time eg: 20 mins / 1 hr 30 mins</label>
                 </div>
             </div>
             <!-- servings -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix"></i>
-                    <input id="servings" name="servings" type="text" class="validate" required>
-                    <label for="servings">Servings</label>
+                    <input id="servings" name="servings" type="number" pattern="[0-9]" 
+                        class="validate" required>
+                    <label for="servings">Servings (Numbers only)</label>
                 </div>
             </div>
             <!-- ingredients -->
             <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-pizza-slice prefix"></i>
-                    <input id="ingredients" name="ingredients" type="text" class="validate" required>
-                    <label for="ingredients">Ingredients</label>
-                </div>
+                <!-- <form class="col s12">
+                    <div class="row"> -->
+                        <div class="input-field col s12">
+                            <i class="fas fa-pizza-slice prefix"></i>
+                            <textarea id="ingredients" name="ingredients" type="text" class="materialize-textarea validate" required></textarea>
+                            <label for="ingredients">Ingredients - place each ingredient on a new line</label>
+                        </div>
+                    <!-- </div>
+                </form> -->
             </div>            
             <!-- recipe method -->
             <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-pizza-slice prefix"></i>
-                    <input id="method" name="method" type="text" class="validate" required>
-                    <label for="method">Recipe Method</label>
-                </div>
+                <!-- <form class="col s12">
+                    <div class="row"> -->
+                        <div class="input-field col s12">
+                            <i class="fas fa-book-open prefix"></i>
+                            <textarea id="method" name="method" type="text" class="materialize-textarea validate" required></textarea>
+                            <label for="method">Recipe Method - place each step on a new line</label>
+                        </div>
+                    <!-- </div>
+                </form> -->
             </div>
-            <!-- upload image -->
-            <div class="file-field input-field">
-                <div class="btn">
-                    <span>Upload Image</span>
-                    <input type="file">
-                </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text">
+            <!-- add url for recipe image -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-image prefix"></i>
+                    <input id="recipe_image" name="recipe_image" type="url" class="validate">
+                    <label for="recipe_image">URL for Recipe Image</label>
                 </div>
             </div>
             <!-- submit button -->
