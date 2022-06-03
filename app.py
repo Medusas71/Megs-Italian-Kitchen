@@ -111,7 +111,7 @@ def my_recipes(username):
     grab the session user's username from db
     """
     username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+        {"username": session["user"]})["username"].capitalize()
 
     if session["user"]:
         recipes = list(mongo.db.recipes.find())
@@ -137,7 +137,7 @@ def add_recipe():
     if request.method == "POST":
         recipe = {
             "category": request.form.get("category"),
-            "recipe_name": request.form.get("recipe_name"),
+            "recipe_name": request.form.get("recipe_name").capitalize(),
             "prep_time": request.form.get("prep_time"),
             "cook_time": request.form.get("cook_time"),
             "servings": request.form.get("servings"),
