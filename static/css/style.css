@@ -12,8 +12,9 @@
     color: #cd212a !important;
 }
 
-h1 {
+h1, h2 , h3 {
     font-family: "Open Sans", sans-serif;
+    font-weight: bold;
 }
 
 h4 {
@@ -34,7 +35,7 @@ nav {
 
 nav .brand-logo {
     margin-left: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 nav a {
@@ -51,10 +52,6 @@ nav a {
 
 .text-shadow {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
-}
-
-.font-heading {
-    font-weight: bold;
 }
 
 /*---------------------- Flash Messages */
@@ -81,13 +78,14 @@ nav a {
 /*---------------------- index.html */
 
 .hero-image {
-    background: url(static/images/spice-pasta-lunch-top-fresh.jpg) no-repeat center center;
+    background: url(../images/spice-pasta-lunch-top-fresh.jpg) no-repeat center center;
     background-size: cover;
     height: 100vw;
 }
 
 .homepage {
     padding-top: 20px;
+    color: white;
 }
 
 
@@ -120,16 +118,36 @@ nav a {
     max-width: 100%;
 } */
 
-.card-title {
-    
-    text-align: center;
+.card .card-title {
+    font-size: 20px;
 }
+
 .card-title,
-.created-by,
-.category-name {    
-    margin-left: 20px;
+/* .created-by, */
+/* .category-name, */
+.timing,
+.servings,
+.recipe-links {    
+    /* margin-left: 20px; */
+    padding: 0;
     font-family: "Open SansS", sans-serif;
+    color: #007a3d;
 }
+
+.card-title,
+.category-name,
+.created-by,
+.timing,
+.servings,
+.recipe-links {
+    font-weight: bold;
+}
+
+.category-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
 
 /*---------------------- Media Queries */
 
@@ -139,6 +157,21 @@ nav a {
 
     nav .brand-logo {
     font-size: 2.1rem;
+    }
+
+    .card-title,
+    .created-by,
+    .category-name,
+    .timing,
+    .servings,
+    .recipe-links {
+        padding: 0;
+        font-family: "Open SansS", sans-serif;
+        font-size: 14px;
+    }
+
+    .card .card-title {
+        font-size: 40px;
     }
 }
 
