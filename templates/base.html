@@ -36,7 +36,7 @@
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="green">Home</a></li>
+                    <li><a href="{{ url_for('index') }}" class="green">Home</a></li>
                     <li><a href="{{ url_for('get_recipes') }}" class="red">Recipes</a></li>
                     {% if session.user %}                        
                         <li><a href="{{ url_for('add_recipe') }}" class="green">Add Recipes</a></li>
@@ -57,7 +57,7 @@
                 <span class="green">Meg's</span>
                 <span class="red">Italian</span>
                 <span class="green">Kitchen</span></h4>
-            <li><a href="#" class="green">Home</a></li>
+            <li><a href="{{ url_for('index') }}" class="green">Home</a></li>
             <li><a href="{{ url_for('get_recipes') }}" class="red">Recipes</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('add_recipe') }}" class="green">Add Recipe</a></li>

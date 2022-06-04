@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero-image">
+    <div class="row homepage">
+        <div class="col s12">
+            <h1>Welcome to Meg's Italian Kitchen</h1>
+        </div>
+    </div>
+    <div class="row open-sans-font">
+        <div class="col s12">
+            <p>
+                Bring the tastes of Italy into your kitchen today.
+            </p>
+        </div>
+        <div class="col s12">
+            <p>
+                <a href="{{ url_for('get_recipes') }}">Browse</a> the recipes.
+                <a href="{{ url_for('register') }}">Register</a> to add your own recipes.
+                Save your <a href="#">Favourites</a>.
+            </p>
+        </div>
+        <div class="col s12">
+            <p>
+                Enjoy creating these mouthwatering recipes.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

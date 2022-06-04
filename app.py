@@ -28,6 +28,13 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/index")
+def index():
+    """ Home Page
+    """
+    return render_template("index.html")
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     """
@@ -36,7 +43,6 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
-
 
 
 @app.route("/register", methods=["GET", "POST"])

@@ -12,8 +12,16 @@
     color: #cd212a !important;
 }
 
+h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
 h4 {
     font-weight: bold;
+}
+
+.open-sans-font {
+        font-family: "Open Sans", sans-serif;
 }
 
 /*---------------------- Navbar */
@@ -68,6 +76,20 @@ nav a {
     margin-bottom: 20px;
     text-align: center;
 }
+
+
+/*---------------------- index.html */
+
+.hero-image {
+    background: url(static/images/spice-pasta-lunch-top-fresh.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vw;
+}
+
+.homepage {
+    padding-top: 20px;
+}
+
 
 /*---------------------- Recipe Cards */
 
