@@ -120,7 +120,7 @@ def my_recipes(username):
         {"username": session["user"]})["username"].capitalize()
 
     if session["user"]:
-        recipes = list(mongo.db.recipes.find())
+        recipes = list(mongo.db.recipes.find({"created_by": session["user"]}))
         return render_template(
             "my_recipes.html", username=username, recipes=recipes)
 

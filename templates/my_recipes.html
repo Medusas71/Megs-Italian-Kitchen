@@ -4,42 +4,61 @@
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
-                <!-- <h3 class="center-align">
+                <h3 class="center-align">
                     {{ username }}'s Recipes
-                </h3> -->
+                </h3>
             </div>
         </div>
     </div>
 
     {% for recipe in recipes %} 
-        <div class="row">      
-            <div class="col s12 m6">
-                <div class="card">     
-                    <div class="card-image">
-                        <img src="static/images/test_image.jpg">
-                    </div>
-                    <div>                    
+        <div class="col s12 m7">
+            <div class="card small horizontal">
+                <div class="card-image">
+                    {% if recipes.recipe_image|length > 0 %}
+                        <img src="{{ recipe.recipe_image }}">
+                    {% else %}
+                        <img src="../static/images/wine_setting.jpg">
+                    {% endif %}                  
+                </div>
+                <div class="card-stacked">
+                    <div>
                         <span class="card-title">
                             <strong>{{ recipe.recipe_name }}</strong>
-                            <p><em>by: {{ recipe.created_by }}</em></p>
+                            <i class="far fa-heart heart red"></i>                            
                         </span>
-                        <i class="far fa-heart heart red"></i>
-                    </div>
-                    <div class="category-name">
-                        <strong>{{ recipe.category }}</strong>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                            because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        {% if session.user|lower == recipe.created_by|lower %}
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green">Edit</a>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red">Delete</a>
-                        {% endif %}
-                    </div>
+                        <span>                  
+                            <p>
+                                <span class="created-by s12 green">by:</span> {{ recipe.created_by }} 
+                                <strong class="category-name s12"><span class="green">
+                                    Course:</span> 
+                                    {{ recipe.category }}
+                                </strong>
+                            </p>
+                        </span> 
+                        <span>
+                            <p>
+                                <strong class="timing s12">Prep Time:</strong> {{ recipe.prep_time }}
+                            </p>
+                            <p>
+                                <strong class="timing s12">Cook Time:</strong> {{ recipe.cook_time }}
+                            </p>
+                                <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
+                            </p>
+                        </span>
+                        <div class="card-action">
+                            {% if session.user|lower == recipe.created_by|lower %}
+                                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green">Edit</a>
+                                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red">Delete</a>
+                            {% endif %}
+                        </div>
+                        <!-- <div class="recipe-links">
+                            <a href="#" class="green recipe-links">View the full recipe</a>
+                            <a href="#" class="green recipe-links">Add to Favourites</a>
+                        </div>                   -->
+                    </div>      
                 </div>
-            </div>        
+            </div>
         </div>
     {% endfor %}
 
