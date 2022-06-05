@@ -172,6 +172,10 @@ h1 {
     font-weight: bold;
 }
 
+.card-action {
+    font-size: .8rem;
+}
+
 .category-name {
     font-weight: bold;
     font-size: 15px;
