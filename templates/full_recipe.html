@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        {% for recipe in recipes %}
+            <div class="col s12 m7">
+                <div class="card large">
+                    <div class="card-image">
+                        {% if recipes.recipe_image|length > 0 %}
+                            <img src="{{ recipe.recipe_image }}">
+                        {% else %}
+                            <img src="../static/images/wine_setting.jpg">
+                        {% endif %}     
+                    </div>
+                    <div class="card-stacked">
+                        <div>
+                            <span class="card-title">
+                                <strong>{{ recipe.recipe_name }}</strong>
+                                <i class="far fa-heart heart red"></i>                            
+                            </span>
+                            <span>                  
+                                <p>
+                                    <span class="created-by s12 green">by:</span> {{ recipe.created_by }} 
+                                    <strong class="category-name s12"><span class="green">
+                                        Course:</span> 
+                                        {{ recipe.category }}
+                                    </strong>
+                                </p>
+                            </span> 
+                            <span>
+                                <p>
+                                    <strong class="timing s12">Prep Time:</strong> {{ recipe.prep_time }}
+                                </p>
+                                <p>
+                                    <strong class="timing s12">Cook Time:</strong> {{ recipe.cook_time }}
+                                </p>
+                                    <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
+                                </p>
+                            </span>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>    
+
+{% endblock %}

@@ -28,6 +28,15 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/full_recipe/<recipe_id>")
+def full_recipe(recipe_id):
+    """
+    Displays full recipe including steps and ingredients
+    """
+    recipes = list(mongo.db.recipes.find({"_id": ObjectId(recipe_id)}))
+    return render_template("full_recipe.html", recipes=recipes)
+
+
 @app.route("/index")
 def index():
     """ Home Page
