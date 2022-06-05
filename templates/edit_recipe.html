@@ -28,7 +28,7 @@
                             {% endif %}
                         {% endfor %}
                     </select>
-                    <label for="category">Category</label>
+                    <label for="category">Select Category</label>
                 </div>
             </div>
             <!-- preparation time -->
@@ -37,7 +37,7 @@
                     <i class="fas fa-clock prefix"></i>
                     <input id="prep_time" name="prep_time" value="{{ recipe.prep_time }}" 
                         type="text" class="validate" required>
-                    <label for="prep_time">Preparation Time</label>
+                    <label for="prep_time">Preparation Time eg: 10 mins</label>
                 </div>
             </div>
             <!-- cooking time -->
@@ -46,7 +46,7 @@
                     <i class="fas fa-clock prefix"></i>
                     <input id="cook_time" name="cook_time" value="{{ recipe.cook_time }}"
                         type="text" class="validate" required>
-                    <label for="cook_time">Cooking Time</label>
+                    <label for="cook_time">Cooking Time eg: 20 mins / 1 hr 30 mins</label>
                 </div>
             </div>
             <div class="row">
@@ -54,7 +54,7 @@
                     <i class="fas fa-utensils prefix"></i>
                     <input id="servings" name="servings" value="{{ recipe.servings }}"
                         type="text" class="validate" required>
-                    <label for="servings">Servings</label>
+                    <label for="servings">Servings (Numbers only)</label>
                 </div>
             </div>
             <!-- ingredients -->
@@ -65,7 +65,7 @@
                         class="materialize-textarea validate" required>
                             {{- recipe.ingredients -}}
                     </textarea>
-                    <label for="ingredients">Ingredients</label>
+                    <label for="ingredients">Ingredients - place each ingredient on a new line</label>
                 </div>
             </div>
             <!-- recipe method -->
@@ -76,7 +76,7 @@
                         class="materialize-textarea validate" required>
                             {{- recipe.method -}}
                     </textarea>
-                    <label for="method">Recipe Method</label>
+                    <label for="method">Recipe Method - place each step on a new line</label>
                 </div>
             </div>
             <!-- add recipe image -->
