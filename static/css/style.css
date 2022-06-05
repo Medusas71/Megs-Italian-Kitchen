@@ -9,9 +9,9 @@ html, body {
     flex-direction: column;
 }
 
-.container {
+/* .container {
     width: 100%;
-}
+} */
 
 .green {
     background-color: #f4f5f0 !important;
