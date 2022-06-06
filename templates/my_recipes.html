@@ -15,8 +15,8 @@
         <div class="col s12 m7">
             <div class="card small horizontal">
                 <div class="card-image">
-                    {% if recipes.recipe_image|length > 0 %}
-                        <img src="{{ recipes.recipe_image }}">
+                    {% if recipe.recipe_image %}
+                        <img src="{{ recipe.recipe_image }}">
                     {% else %}
                         <img src="../static/images/wine_setting.jpg">
                     {% endif %}                  
@@ -24,8 +24,7 @@
                 <div class="card-stacked">
                     <div>
                         <span class="card-title">
-                            <strong>{{ recipe.recipe_name }}</strong>
-                            <i class="far fa-heart heart red"></i>                            
+                            <strong>{{ recipe.recipe_name }}</strong>                          
                         </span>
                         <span>                  
                             <p>
