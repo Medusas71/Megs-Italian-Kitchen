@@ -9,9 +9,9 @@ html, body {
     flex-direction: column;
 }
 
-/* .container {
+.container {
     width: 100%;
-} */
+}
 
 .green {
     background-color: #f4f5f0 !important;
@@ -245,8 +245,12 @@ h1 {
 @media screen and (min-width: 992px) {
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.2rem;
     }
+
+    /* h1 {
+        font-size: 3.5rem;
+    } */
 
     .index-text {
         margin-right: 400px;
