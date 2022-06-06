@@ -4,7 +4,7 @@
     <div class="row">
         {% for recipe in recipes %}
             <div class="col s12 m7">
-                <div class="card large">
+                <div class="card large horizontal">
                     <div class="card-image">
                         {% if recipe.recipe_image %}
                             <img src="{{ recipe.recipe_image }}">
@@ -12,31 +12,26 @@
                             <img src="../static/images/wine_setting.jpg">
                         {% endif %}     
                     </div>
-                    <div class="card-stacked">
-                        <div>
-                            <span class="card-title">
-                                <strong>{{ recipe.recipe_name }}</strong>                          
-                            </span>
-                            <span>                  
-                                <p>
-                                    <span class="created-by s12 green">by:</span> {{ recipe.created_by }} 
-                                    <strong class="category-name s12"><span class="green">
-                                        Course:</span> 
-                                        {{ recipe.category }}
-                                    </strong>
-                                </p>
-                            </span> 
-                            <span>
-                                <p>
-                                    <strong class="timing s12">Prep Time:</strong> {{ recipe.prep_time }}
-                                </p>
-                                <p>
-                                    <strong class="timing s12">Cook Time:</strong> {{ recipe.cook_time }}
-                                </p>
-                                    <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
-                                </p>
-                            </span>
-                        </div>      
+                    <div class="row">
+                        <div class="col s12 card-content">
+                            <h2 class="card-title">{{ recipe.recipe_name }}</h2>
+                        </div>
+                        <div class="col s12">
+                            <h4 class="recipe-ingredients">Ingredients</h4>
+                            <ul>                                
+                                <li class="ingredients-list">
+                                    {{ recipe.ingredients }}
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="col s12">
+                            <h4 class="recipe-steps">Steps</h4>
+                            <ol>
+                                <li class="recipe-method">
+                                    {{ recipe.method }}
+                                </li>                                
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
