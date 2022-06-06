@@ -6,7 +6,7 @@
             <div class="col s12 m7">
                 <div class="card large">
                     <div class="card-image">
-                        {% if recipe.recipe_image|length > 0 %}
+                        {% if recipe.recipe_image %}
                             <img src="{{ recipe.recipe_image }}">
                         {% else %}
                             <img src="../static/images/wine_setting.jpg">

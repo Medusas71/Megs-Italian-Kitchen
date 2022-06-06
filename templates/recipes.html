@@ -23,8 +23,7 @@
                 </form>
             </div>
         </div>
-    </div>
-    <!-- {% if recipes|length > 0 %} -->       
+    </div>     
     {% for recipe in recipes %} 
         <div class="col s12 m7">
             <div class="card small horizontal">
@@ -67,10 +66,8 @@
                 </div>
             </div>
         </div>
-    {% endfor %}
-    {% else %}
-            <h3 class="red center-align">No Recipes Found</h3>
-    {% endif %}
-    
+        {% else %}
+            <h3 class="red center-align">No Recipes Found</h3> 
+    {% endfor %}   
 
 {% endblock %}
