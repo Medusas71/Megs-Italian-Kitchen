@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card-panel">
+                <h3 class="center-align">
+                    <!-- {{ username }}'s Favourites -->
+                    {{ username.favourites }}
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    {% if username.favourites|length %}
+        <!-- {% for favourite in username.favourites %} -->
+            {% for recipe in recipes %}
+                {% if favourite == recipe._id %}
+                    <div class="col s12 m7">
+                        <div class="card small horizontal">
+                            <div class="card-image">
+                                {% if recipes.recipe_image|length > 0 %}
+                                    <img src="{{ recipe.recipe_image }}">
+                                {% else %}
+                                    <img src="../static/images/wine_setting.jpg">
+                                {% endif %}                  
+                            </div>
+                            <div class="card-stacked">
+                                <div>
+                                    <span class="card-title">
+                                        <strong>{{ recipe.recipe_name }}</strong>
+                                        <i class="far fa-heart heart red"></i>                            
+                                    </span>
+                                    <span>                  
+                                        <p>
+                                            <span class="created-by s12 green">by:</span> {{ recipe.created_by }} 
+                                            <strong class="category-name s12"><span class="green">
+                                                Course:</span> 
+                                                {{ recipe.category }}
+                                            </strong>
+                                        </p>
+                                    </span> 
+                                    <span>
+                                        <p>
+                                            <strong class="timing s12">Prep Time:</strong> {{ recipe.prep_time }}
+                                        </p>
+                                        <p>
+                                            <strong class="timing s12">Cook Time:</strong> {{ recipe.cook_time }}
+                                        </p>
+                                            <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
+                                        </p>
+                                    </span>
+                                    <div class="card-action">
+                                        {% if session.user|lower == recipe.created_by|lower %}
+                                            <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="btn-small text-shadow green">Display Recipe</a>
+                                            <a href="{{ url_for('delete_favourite_page', recipe_id=recipe._id) }}" class="btn-small text-shadow red">Delete Favourite</a>
+                                        {% endif %}
+                                    </div>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        <!-- {% endfor %} -->
+    {% endif %}
+{% endblock %}

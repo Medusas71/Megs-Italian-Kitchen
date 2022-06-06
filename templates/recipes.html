@@ -29,21 +29,66 @@
         <div class="col s12 m7">
             <div class="card small horizontal">
                 <div class="card-image">
-                    {% if recipes.recipe_image|length > 0 %}
+                    {% if recipe.recipe_image %}
                         <img src="{{ recipe.recipe_image }}">
                     {% else %}
-                        <img src="static/images/wine_setting.jpg">
+                        <img src="../static/images/wine_setting.jpg">
                     {% endif %}                  
                 </div>
+
                 <div class="card-action">
-                    <a href="{{ url_for('full_recipe', recipe_id=recipe_id) }}" class="col s12 btn-small text-shadow green recipe-links">View full recipe</a>
-                    <a href="#" class="col s12 btn-small text-shadow green recipe-links">Add to Favourites</a>
+                    <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="col s12 btn-small text-shadow green recipe-links">View full recipe</a>
+                    {% if user %}
+                        {% if recipes.recipe_id in user.favourites %}                    
+                            <form class="col s12" method="POST" action="{{ url_for('delete_favourite', recipe_id=recipe._id) }}">
+                                <button type="submit" name="delete_favourite" value="Delete from Favourites">
+                                    Delete from Favourites <i class="fas fa-heart heart red"></i>
+                                </button>
+                            </form>
+                        {% else %}
+                            <form class="col s12" method="POST" action="{{ url_for('add_favourite', recipe_id=recipe._id) }}">
+                                <button type="submit" name="add_favourite" value="Add to Favourites">
+                                    Add to Favourites <i class="far fa-heart heart red"></i>
+                                </button>
+                            </form>
+                        {% endif %}
+                    {% else %}
+                        <form class="col s12" method="POST" action="{{ url_for('add_favourite', recipe_id=recipe._id) }}">
+                            <button type="submit" name="add_favourite" value="Add to Favourites">
+                                Add to Favourites <i class="far fa-heart heart red"></i>
+                            </button>
+                        </form>
+                    {% endif %}
                 </div>
+
+                <!-- <div class="card-action">
+                    <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" class="col s12 btn-small text-shadow green recipe-links">View full recipe</a>
+                    <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                {% if user %}
+                                    {% if recipes.recipe_id in user.favourites %}
+                                        <a href="{{ url_for('delete_favourite', recipe_id=recipe._id) }}" 
+                                            class="col s12 btn-small text-shadow green recipe-links">Delete from Favourites 
+                                            <i class="fas fa-heart heart red"></i></a>
+                                    {% else %}
+                                        <a href="{{ url_for('add_favourite', recipe_id=recipe._id) }}" 
+                                            class="col s12 btn-small text-shadow green recipe-links">Add to Favourites 
+                                            <i class="far fa-heart heart red"></i></a>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{{ url_for('add_favourite', recipe_id=recipe._id) }}" 
+                                        class="col s12 btn-small text-shadow green recipe-links">Add to Favourites 
+                                        <i class="far fa-heart heart red"></i></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </form>                    
+                </div> -->
                 <div class="card-stacked">
                     <div>
                         <span class="card-title">
-                            <strong>{{ recipe.recipe_name }}</strong>
-                            <i class="far fa-heart heart red"></i>                            
+                            <strong>{{ recipe.recipe_name }}</strong>                                                       
                         </span>
                         <span>                  
                             <p>
@@ -64,10 +109,6 @@
                                 <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
                             </p>
                         </span>
-                        <!-- <div class="recipe-links">
-                            <a href="#" class="green recipe-links">View the full recipe</a>
-                            <a href="#" class="green recipe-links">Add to Favourites</a>
-                        </div>                   -->
                     </div>      
                 </div>
             </div>

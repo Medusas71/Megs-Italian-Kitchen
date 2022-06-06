@@ -34,6 +34,7 @@ def full_recipe(recipe_id):
     Displays full recipe including steps and ingredients
     """
     recipes = mongo.db.recipes.find({"_id": ObjectId(recipe_id)})
+    print(recipes)
     return render_template("full_recipe.html", recipes=recipes)
 
 
@@ -67,13 +68,15 @@ def register():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
+            # advise username already exists
             # added category so text could change colour - see Readme credits
             flash("Username already exists", category="red")
             return redirect(url_for("register"))
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
+            "favourites": []
         }
         mongo.db.users.insert_one(register)
 
@@ -188,6 +191,7 @@ def edit_recipe(recipe_id):
         }}
         mongo.db.recipes.update_one({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Updated", category="green")
+        return redirect(url_for("get_recipes"))
 
     recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category", 1)
@@ -203,6 +207,74 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.delete_one({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted", category="green")
     return redirect(url_for("get_recipes"))
+
+
+@app.route("/favourites")
+def favourites():
+    """
+    displays users favourites
+    """
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"].capitalize()
+
+    if session["user"]:
+        recipes = list(mongo.db.recipes.find({"created_by": session["user"]}))
+        return render_template(
+            "favourites.html", username=username, recipes=recipes)
+
+
+@app.route("/get_recipes/add_favourite/<recipe_id>", methods=["GET","POST"])
+def add_favourite(recipe_id):
+    """
+    add recipe to favourites
+    """
+    print('linking')
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["_id"]
+
+    if session["user"]:
+        mongo.db.users.update_one(
+            {"_id": ObjectId(username)},
+            {"$push": {"favourites": ObjectId(recipe_id)}})
+        flash("Recipe Added to Favourites", category="green")
+    else:
+        flash("Please log in to use this feature")
+        return redirect(url_for("login"))
+    return redirect(url_for("get_recipes"))
+
+
+@app.route("/recipes/delete_favourite/<recipe_id>")
+def delete_favourite(recipe_id):
+    """
+    delete recipe from favourites that display on Recipes page, 
+    delete from db and delete from my_favourites page.
+    """
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["_id"]
+
+    if session["user"]:
+        mongo.db.users.update_one(
+            {"_id": ObjectId(username)},
+            {"$pull": {"favourites": ObjectId(recipe_id)}})
+        flash("Recipe Removed from Favourites", category="green")
+    return redirect(url_for("get_recipes"))
+
+
+@app.route("/recipes/delete_favourite_page/<recipe_id>")
+def delete_favourite_page(recipe_id):
+    """
+    delete recipe from my_favourites page, 
+    delete from db and delete favourite from the recipes page.
+    """
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["_id"]
+
+    if session["user"]:
+        mongo.db.users.update_one(
+            {"_id": ObjectId(username)},
+            {"$pull": {"favourites": ObjectId(recipe_id)}})
+        flash("Recipe Removed from Favourites", category="green")
+    return redirect(url_for("favourites"))
 
 
 if __name__ == "__main__":
