@@ -29,7 +29,7 @@
         <!-- top navbar -->
         <nav class="nav-extended font-heading text-shadow">
             <div class="nav-wrapper">
-                <a href="{{ url_for('get_recipes') }}" class="brand-logo">
+                <a href="{{ url_for('index') }}" class="brand-logo">
                     <span class="green">Meg's</span>
                     <span class="red">Italian</span>
                     <span class="green">Kitchen</span>
@@ -43,8 +43,8 @@
                         <li><a href="{{ url_for('my_recipes', username=session['user']) }}" class="red">My Recipes</a></li>
                         <li><a href="{{ url_for('logout') }}" class="green">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}" class="red">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}" class="green">Register</a></li>
+                        <li><a href="{{ url_for('login') }}" class="green">Log In</a></li>
+                        <li><a href="{{ url_for('register') }}" class="red">Register</a></li>
                     {% endif %}
                 </ul>
             </div>
