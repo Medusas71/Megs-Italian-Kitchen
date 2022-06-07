@@ -3,9 +3,11 @@
 
     <div class="container">
         <div class="row">
+            <!-- recipe card --> 
             {% for recipe in recipes %}
                 <div class="col s12 m7">
                     <div class="card large horizontal">
+                        <!-- recipe image -->
                         <div class="card-image">
                             {% if recipe.recipe_image %}
                                 <img src="{{ recipe.recipe_image }}">
@@ -13,6 +15,7 @@
                                 <img src="../static/images/wine_setting.jpg">
                             {% endif %}     
                         </div>
+                        <!-- card details -->
                         <div class="row">
                             <div class="col s12 card-content">
                                 <h2 class="card-title">{{ recipe.recipe_name }}</h2>
