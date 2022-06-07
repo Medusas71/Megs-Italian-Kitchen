@@ -145,6 +145,8 @@ was chosen as Simonetta is a serif font and Open Sans is a sans serif font and t
 
 Imagery
 
+* The homepage image was sourced from [freepik](https://www.freepik.com/free-photo/spice-pasta-lunch-top-fresh_1087766.htm#query=italian%20cuisine&position=2&from_view=keyword) - See Media in Credits for attribution.
+* See [Credits](#credits) for all recipe images.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -199,6 +201,7 @@ Imagery
 1. [Code Institute Course Content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
 1. [Coolors](https://coolors.co/) - to display colour palette
 1. [Font Awesome](https://fontawesome.com/v5/search) - for their icons
+1. [Freepik](https://www.freepik.com/home) - for the home page image
 1. [Git](https://git-scm.com/) - version control
 1. [GitHub](https://github.com/) - used to store the project files
 1. [Gitpod](https://www.gitpod.io/) - IDE
@@ -206,6 +209,7 @@ Imagery
 1. [Heroku](https://id.heroku.com/login) - a container-based cloud Platform as a Service (PaaS) used to deploy the project 
 1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture and resizing images
 1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
+1. [Unsplash](https://unsplash.com/) - for the standard recipe image
 1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
 
 [Back to Table of Contents](#table-of-contents)
@@ -248,6 +252,12 @@ Content
 
 
 Media  
+
+* The home page image was sourced from [freepik.com](https://www.freepik.com/free-photo/spice-pasta-lunch-top-fresh_1087766.htm#query=italian%20cuisine&position=2&from_view=keyword). Attribution <a href='https://www.freepik.com/photos/pasta-background'>Pasta background photo created by valeria_aksakova - www.freepik.com</a>
+* Once someone adds a recipe, they have the option to add an image URL. These cannot be credited in the Readme as the URL address is unknown to the author at the time of creating this Readme file.
+* If a image URL is not added to the recipe, then a standard image displays. This image has been sourced from [Unsplash](https://unsplash.com/photos/ab8wP1U-rBg).
+
+
 
 
 Acknowledgements
