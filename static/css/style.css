@@ -187,6 +187,12 @@ img {
     font-size: .5rem;
 } */
 
+/*---------------------- Add and Edit Recipe Cards */
+
+.input-field>label {
+    font-size: .7rem;
+}
+
 /*---------------------- Media Queries */
 
 /*---------------------- small devices (landscape phones, 576px and up) */
@@ -224,6 +230,10 @@ img {
     .index-text {
         margin-right: 280px;
         font-size: 1.5rem
+    }
+
+    .input-field>label {
+        font-size: 1rem;
     }
 }
 
