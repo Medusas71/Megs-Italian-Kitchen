@@ -158,6 +158,16 @@ Imagery
 <a id="future-features"></a>
 **Future Features to implement**
 
+* Add a recipe to favourites
+* Delete a recipe from favourites
+* Have recipes display in their own category, for eg: all entree meals are displayed on their own page, same for mains and desserts
+* Review other peoples recipes
+* Contact page - to ask questions if required to the site owner
+* Change the icon colours once form is completed
+* Be able to add ingredients one at a time by using a plus button, rather than pressing enter after every ingredient
+* Be able to add recipe method (steps) one at a time by using a plus button, rather than pressing enter after each step
+
+
 
 [Back to Table of Contents](#table-of-contents)
 
