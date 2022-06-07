@@ -206,7 +206,7 @@ def delete_recipe(recipe_id):
     """
     mongo.db.recipes.delete_one({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted", category="green")
-    return redirect(url_for("get_recipes"))
+    return redirect(url_for("my_recipes"))
 
 
 if __name__ == "__main__":
