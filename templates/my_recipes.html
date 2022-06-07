@@ -11,10 +11,11 @@
                 </div>
             </div>
         </div>
-
+        <!-- recipe card -->  
         {% for recipe in recipes %} 
             <div class="col s12 m7">
                 <div class="card small horizontal">
+                    <!-- recipe image -->
                     <div class="card-image">
                         {% if recipe.recipe_image %}
                             <img src="{{ recipe.recipe_image }}">
@@ -22,6 +23,7 @@
                             <img src="../static/images/wine_setting.jpg">
                         {% endif %}                  
                     </div>
+                    <!-- card details -->
                     <div class="card-stacked">
                         <div>
                             <span class="card-title">
@@ -46,6 +48,7 @@
                                     <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
                                 </p>
                             </span>
+                            <!-- card action -->
                             <div class="card-action">
                                 {% if session.user|lower == recipe.created_by|lower %}
                                     <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small text-shadow green">Edit</a>

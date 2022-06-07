@@ -4,6 +4,7 @@
 <div class="container">    
     <h3 class="center-align">All Recipes</h3>
     
+        <!-- search field -->
         <div class="row">
             <div class="col s12">
                 <div>               
@@ -24,10 +25,12 @@
                     </form>
                 </div>
             </div>
-        </div>     
+        </div>
+        <!-- recipe card -->    
         {% for recipe in recipes %} 
             <div class="col s12 m7">
                 <div class="card small horizontal">
+                    <!-- recipe image -->
                     <div class="card-image">
                         {% if recipe.recipe_image %}
                             <img src="{{ recipe.recipe_image }}">
@@ -35,10 +38,12 @@
                             <img src="../static/images/wine_setting.jpg">
                         {% endif %}                  
                     </div>
+                    <!-- card action -->
                     <div class="card-action">
                         <a href="{{ url_for('full_recipe', recipe_id=recipe._id) }}" 
                             class="col s12 btn-small text-shadow green recipe-links">View full recipe</a>                    
                     </div>
+                    <!-- card details -->
                     <div class="card-stacked">
                         <div>
                             <span class="card-title">
