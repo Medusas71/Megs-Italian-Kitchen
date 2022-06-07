@@ -53,3 +53,23 @@
 
 <a id="bugs-fixes"></a>
 ## Bugs/Fixes  
+
+**Font colour**
+
+**1. Issue**:
+I was wanting to change the font colour on the navbar and Flash Messages and was having problems in overriding the default settings in Materialize.
+* **FIX**:
+The only way I could rectify this was use the !important rule in my CSS. There may be another way to rectify this, but I found this worked.
+
+**Home Page**
+
+**1. Issue**:
+I was having issues with my footer where the footer wouldn't stay at the bottom of the page.
+* **Fix**:
+I found a fix for this on [Stack Overflow](https://stackoverflow.com/questions/55541850/how-to-make-footer-stay-at-bottom-of-the-page-with-flex-box) where I changed the html and body height to 100%, display of flex and flex-direction of column.
+
+**2. Issue**:
+As I was using Materialize in my project, the class of container had its own style. I originally had the class of container in my base.html, so it could update every page. However, this was affecting my home page image and it wouldn't cover the whole page. I changed the container width to 100%, but then that affected every other page and I didn't want the recipe cards to have 100% width.
+* **Fix**:
+I removed the class of container from the base.html page and added it directly to the pages that I wanted to use that styling on. Then I could make my home page have a width of 100%.
+
