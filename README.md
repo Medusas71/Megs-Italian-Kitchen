@@ -55,10 +55,7 @@ First Time Visitor Goals
 * As a first time visitor to the website, I would like to:  
   * search for Italian recipes
   * view various Italian recipes
-  * have the meals in categories so they are easier to find
-  * add a recipe to my favourites
   * be able to have the opportunity to register so I can add new recipes to the database
-  * be able to contact the site owner to ask questions if required
 
 Returning Visitor Goals
 
@@ -68,9 +65,6 @@ Returning Visitor Goals
   * have the ability to add a recipe
   * have the ability to amend the recipe as required
   * have the ability to delete my own recipes
-  * add a recipe to my favourites
-  * delete a recipe from my favourites
-  * be able to contact the site owner to ask questions if required
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -90,27 +84,19 @@ The features of this project will include:
 * The ability to:
   * search for Italian recipes
   * view all Italian recipes
-  * have the meals in categories so they are easier to locate
   * register to add new recipes to the database
   * once registered to have a log in/out screen that the user can return to
   * view the users recipes that have been added by that user
   * add my own recipe
   * amend my recipe
   * delete my recipe
-  * add a recipe to my favourites
-  * delete a recipe from my favourites
-  * contact the site owner to ask questions if required
 
 <a id="structure"></a>
 ### 3. Structure
 
-The information is grouped logically for all users. The Interaction Design (IXD) will be 
-consistent between pages where the navigation bar is fixed and tailored to have the priority 
-items displayed first at the top of the screen. The footer will scroll with the page. A user 
-can either search and view all recipes and/or log in to add, amend, delete their own recipes 
-and add them to favourites. Once the 'Contact Us' content has been submitted, the user will have 
-clear feedback that the information has been submitted. The site will be consistent with what 
-users expect from an online cookbook.
+The information is grouped logically for all users. The Interaction Design (IXD) will be consistent between pages where the navigation bar is fixed and tailored to have the priority items displayed first at the top of the screen. The footer will scroll with the page. 
+A user can either search and view all recipes and/or log in to add, amend, delete their own recipes.
+The site will be consistent with what users expect from an online cookbook.
 
 <a id="skeleton"></a>
 ### 4. Skeleton
