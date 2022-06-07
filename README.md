@@ -247,10 +247,18 @@ Imagery
 
 Code
 
+* Tutor Support for assistance in helping me understand some code
+* Abi Harrison_alumna, for providing accessibility guidance
+* My mentor for his guidance with the project
+* [Stack Overflow](https://stackoverflow.com/) for resolving specific issues
+* I followed the [Task Manager Application]((https://learn.codeinstitute.net/login?next=/)) walk through project from Code Institute for the CRUD functionality that was used in this project
 * Change colour on Flash Messages: https://stackoverflow.com/questions/44569040/change-color-of-flask-flash-messages
+* See Bugs/Fixes in the [TESTING.md](TESTING.md) for specific credits for code fixes
 
 Content  
 
+* All content was written by myself
+* The recipes were sourced from 
 
 Media  
 
@@ -258,15 +266,11 @@ Media
 * Once someone adds a recipe, they have the option to add an image URL. These cannot be credited in the Readme as the URL address is unknown to the author at the time of creating this Readme file.
 * If a image URL is not added to the recipe, then a standard image displays. This image has been sourced from [Unsplash](https://unsplash.com/photos/ab8wP1U-rBg).
 
-
-
-
 Acknowledgements
 
 * My friends and family for all their feedback and support
 * [Manni_alumnus](https://github.com/manni8436) for his continued support, feedback and keeping me motivated to finish
 * [Abi Harrison_alumna](https://github.com/Abibubble) for our chats regarding accessibility
 * My mentor for all his support and assistance
-
 
 [Back to Table of Contents](#table-of-contents)
