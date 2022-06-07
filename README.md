@@ -167,8 +167,6 @@ Imagery
 * Be able to add ingredients one at a time by using a plus button, rather than pressing enter after every ingredient
 * Be able to add recipe method (steps) one at a time by using a plus button, rather than pressing enter after each step
 
-
-
 [Back to Table of Contents](#table-of-contents)
 
 <a id="technologies-used"></a>
@@ -222,6 +220,11 @@ Imagery
 <a id="lessons-learned"></a>
 # Lessons Learned
 
+* That I can produce a functional website in a short amount of time
+* You can have fun coding
+* That I do know how to problem solve and I feel more confident in fixing bugs
+* Not to give up when times are tough
+* Seek help from other people when needed
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -248,6 +251,11 @@ Media
 
 
 Acknowledgements
+
+* My friends and family for all their feedback and support
+* [Manni_alumnus](https://github.com/manni8436) for his continued support, feedback and keeping me motivated to finish
+* [Abi Harrison_alumna](https://github.com/Abibubble) for our chats regarding accessibility
+* My mentor for all his support and assistance
 
 
 [Back to Table of Contents](#table-of-contents)
