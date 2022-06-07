@@ -199,6 +199,7 @@ Imagery
 
 1. [Balsamiq](https://balsamiq.com/) - wireframes
 1. [Code Institute Course Content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
+1. [Img 2 Go](https://www.img2go.com/compress-image) - to compress the home page image
 1. [Coolors](https://coolors.co/) - to display colour palette
 1. [Font Awesome](https://fontawesome.com/v5/search) - for their icons
 1. [Freepik](https://www.freepik.com/home) - for the home page image
