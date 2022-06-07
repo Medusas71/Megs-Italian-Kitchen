@@ -63,8 +63,8 @@
                 <li><a href="{{ url_for('my_recipes', username=session['user']) }}" class="red">My Recipes</a></li>
                 <li><a href="{{ url_for('logout') }}" class="green">Log Out</a></li>
             {% else %}
-                <li><a href="{{ url_for('login') }}" class="red">Log In</a></li>
-                <li><a href="{{ url_for('register') }}" class="green">Register</a></li>
+                <li><a href="{{ url_for('login') }}" class="green">Log In</a></li>
+                <li><a href="{{ url_for('register') }}" class="red">Register</a></li>
             {% endif %}
         </ul>
     </header>
