@@ -115,7 +115,12 @@ h1 {
 }
 
 .index-text {
-    margin-right: 120px;
+    margin-right: 120px; 
+    margin-left: 20px;
+}
+
+.index-title {
+    margin-left: 20px;
 }
 
 /*---------------------- Recipe Cards */
@@ -203,11 +208,6 @@ img {
         font-size: 1.5rem;
     }
 
-    .index-text {
-        margin-right: 280px;
-        font-size: 1.5rem
-    }
-
     .card-title,
     .created-by,
     .category-name,
@@ -224,8 +224,13 @@ img {
     }
 
     .index-text {
-        margin-right: 280px;
-        font-size: 1.5rem
+        /* margin-right: 280px; */
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .index-title {
+        margin-left: 50px;
     }
 
     .input-field>label {
@@ -241,8 +246,10 @@ img {
         font-size: 3.0rem;
     }
 
-    .index-text {
-        margin-right: 340px;
+    .index-text,
+    .index-title {
+        /* margin-right: 340px; */
+        margin-left: 50px;
     }
 }
 
@@ -254,8 +261,10 @@ img {
         font-size: 2.2rem;
     }
 
-    .index-text {
-        margin-right: 400px;
+    .index-text,
+    .index-title {
+        /* margin-right: 400px; */
+        margin-left: 50px;
     }
 }
 
@@ -263,8 +272,10 @@ img {
 
 @media screen and (min-width: 1200px) {
 
-    .index-text {
-        margin-right: 600px;
+    .index-text,
+    .index-title {
+        /* margin-right: 600px; */
+        margin-left: 50px;
     }
 }
 
