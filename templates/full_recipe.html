@@ -5,14 +5,14 @@
         <div class="row">
             <!-- recipe card --> 
             {% for recipe in recipes %}
-                <div class="col s12 m7">
+                <div class="col s12 m12">
                     <div class="card large horizontal">
                         <!-- recipe image -->
                         <div class="card-image">
                             {% if recipe.recipe_image %}
                                 <img src="{{ recipe.recipe_image }}">
                             {% else %}
-                                <img src="../static/images/wine_setting.jpg">
+                                <img src="../static/images/standard-recipe-image.jpg">
                             {% endif %}     
                         </div>
                         <!-- card details -->

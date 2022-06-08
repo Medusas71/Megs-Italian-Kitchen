@@ -143,6 +143,12 @@ img {
     height: auto;
 }
 
+.card.horizontal.large .card-image img {
+    height: 100%;
+    width: 100%;
+    height: auto;
+}
+
 .card.horizontal.small .card-image, 
 .card.horizontal.medium .card-image, 
 .card.horizontal.large .card-image {
@@ -208,7 +214,7 @@ img {
         font-size: 1.5rem;
     }
 
-    .card-title,
+    /* .card-title, */
     .created-by,
     .category-name,
     .timing,
@@ -219,9 +225,9 @@ img {
         font-size: 14px;
     }
 
-    .card .card-title {
+    /* .card .card-title {
         font-size: 40px;
-    }
+    } */
 
     .index-text {
         /* margin-right: 280px; */
