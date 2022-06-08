@@ -143,6 +143,11 @@ img {
     height: auto;
 }
 
+.recipe-image {
+    width: 100%;
+    height: auto;
+}
+
 .card.horizontal.large .card-image img {
     height: 100%;
     width: 100%;
@@ -198,6 +203,28 @@ img {
 
 .input-field>label {
     font-size: .7rem;
+}
+
+/*---------------------- Full Recipe */
+
+.full-recipe-margin {
+    margin: 100px;
+}
+
+.background-colour {
+    background-color: #f4f5f0;
+}
+
+.full-recipe-image {
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.recipe-ingredients {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /*---------------------- Media Queries */
