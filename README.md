@@ -264,7 +264,7 @@ Media
 
 * The home page image was sourced from [freepik.com](https://www.freepik.com/free-photo/spice-pasta-lunch-top-fresh_1087766.htm#query=italian%20cuisine&position=2&from_view=keyword). Attribution <a href='https://www.freepik.com/photos/pasta-background'>Pasta background photo created by valeria_aksakova - www.freepik.com</a>
 * Once someone adds a recipe, they have the option to add an image URL. These cannot be credited in the Readme as the URL address is unknown to the author at the time of creating this Readme file.
-* If a image URL is not added to the recipe, then a standard image displays. This image has been sourced from [Unsplash](https://unsplash.com/photos/ab8wP1U-rBg).
+* If a image URL is not added to the recipe, then a standard image displays. This image has been sourced from [Unsplash](https://unsplash.com/photos/4nXkhLCrkLo). Attribution - Photo by Jorge Zapata
 
 Acknowledgements
 
