@@ -163,20 +163,13 @@ img {
     overflow: hidden;
 }
 
-/* .card.horizontal {
-    max-width: 100%;
-} */
-
 .card .card-title {
     font-size: 20px;
 }
 
 .card-title,
-/* .created-by, */
-/* .category-name, */
 .timing,
 .servings {    
-    /* margin-left: 20px; */
     padding: 0;
     font-family: "Open SansS", sans-serif;
     color: #007a3d;
@@ -241,7 +234,6 @@ img {
         font-size: 1.5rem;
     }
 
-    /* .card-title, */
     .created-by,
     .category-name,
     .timing,
@@ -252,12 +244,7 @@ img {
         font-size: 14px;
     }
 
-    /* .card .card-title {
-        font-size: 40px;
-    } */
-
     .index-text {
-        /* margin-right: 280px; */
         font-size: 1.5rem;
         margin-left: 50px;
     }
@@ -281,7 +268,6 @@ img {
 
     .index-text,
     .index-title {
-        /* margin-right: 340px; */
         margin-left: 50px;
     }
 }
@@ -296,7 +282,6 @@ img {
 
     .index-text,
     .index-title {
-        /* margin-right: 400px; */
         margin-left: 50px;
     }
 }
@@ -307,7 +292,6 @@ img {
 
     .index-text,
     .index-title {
-        /* margin-right: 600px; */
         margin-left: 50px;
     }
 }
