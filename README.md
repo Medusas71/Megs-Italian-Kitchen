@@ -147,7 +147,7 @@ Imagery
 
 * The homepage image was sourced from [freepik](https://www.freepik.com/free-photo/spice-pasta-lunch-top-fresh_1087766.htm#query=italian%20cuisine&position=2&from_view=keyword) - See Media in Credits for attribution.
 * The 404 vector created by [freepik](https://www.freepik.com/vectors/404)
-* See [Credits](#credits) for all recipe images.
+* See [Credits](#credits) for all recipe images, ingredients and steps.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -245,7 +245,7 @@ The Edit Recipe Page features:
 * Contact page - to ask questions if required to the site owner
 * Change the icon colours once form is completed
 * Be able to add ingredients one at a time by using a plus button, rather than pressing enter after every ingredient
-* Be able to add recipe method (steps) one at a time by using a plus button, rather than pressing enter after each step
+* Be able to add recipe method (steps) one at a time by using a plus button, rather than pressing enter after each step.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -391,7 +391,19 @@ Code
 Content  
 
 * All content was written by myself
-* The recipes were sourced from 
+
+Recipe Content and Images
+
+* See Media for standard image information
+* Spaghetti Bolognese
+  * [Image](https://www.freepik.com/free-photo/appetizing-pasta-with-tomato-sauce-parmesan-plate-closeup_25469163.htm#query=spaghetti%20bolognese&position=3&from_view=search)
+  * [Recipe sourced from taste.com.au](https://www.taste.com.au/recipes/spaghetti-bolognese/335cceba-3913-4172-8a28-44ad7a960ef4)
+* Beef lasagne [recipe sourced from taste.com.au](https://www.taste.com.au/recipes/our-favourite-lasagne/2ac35c7f-3320-48ef-b2cb-ecef75883241)
+* Hawaiian Pizza [recipe and image sourced from myfoodbook.com.au](https://myfoodbook.com.au/recipes/show/hawaiian-pizza-1)
+* Garlic Bread [recipe and image sourced from taste.com.au](https://www.taste.com.au/recipes/garlic-bread-2/beeb9f6a-dbb6-4da3-85c6-6dd816e52e35)
+* Creamy Italian Soup [recipe sourced from taste.com.au](https://www.taste.com.au/recipes/creamy-italian-soup/nfk47sd4)
+* Italian Lemon Cake [recipe and image sourced from taste.com.au](https://www.taste.com.au/recipes/best-ever-italian-lemon-cake-recipe/ww5r0o14)
+* Italian Trifle [recipe and image sourced from taste.com.au](https://www.taste.com.au/recipes/italian-trifle-2/ad0dedf4-86f3-4974-b329-fc6d964fc174)
 
 Media  
 
