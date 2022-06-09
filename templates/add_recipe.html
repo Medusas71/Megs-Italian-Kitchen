@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-folder prefix"></i>
-                    <select id="category" name="category" type="text" class="validate" required>
+                    <select id="category" name="category" class="validate" required>
                         <option value="" disabled selected>Select Category</option>
                         {% for category in categories %}
                             <option value="{{ category.category }}">{{ category.category }}</option>
@@ -32,7 +32,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix"></i>
-                    <input id="prep_time" name="prep_time" type="text" class="validate" required>
+                    <input id="prep_time" name="prep_time" type="text" 
+                        class="validate" required>
                     <label for="prep_time">Preparation Time eg: 10 mins</label>
                 </div>
             </div>
@@ -40,7 +41,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix"></i>
-                    <input id="cook_time" name="cook_time" type="text" class="validate" required>
+                    <input id="cook_time" name="cook_time" type="text" 
+                        class="validate" required>
                     <label for="cook_time">Cooking Time eg: 20 mins / 1 hr 30 mins</label>
                 </div>
             </div>
@@ -48,7 +50,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix"></i>
-                    <input id="servings" name="servings" type="number" pattern="[0-9]" 
+                    <input id="servings" name="servings" type="number" 
                         class="validate" required>
                     <label for="servings">Servings (Numbers only)</label>
                 </div>
@@ -57,7 +59,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pizza-slice prefix"></i>
-                    <textarea id="ingredients" name="ingredients" type="text" 
+                    <textarea id="ingredients" name="ingredients" 
                         class="materialize-textarea validate" required></textarea>
                     <label for="ingredients">Ingredients - place each ingredient on a new line</label>
                 </div>
@@ -66,7 +68,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-book-open prefix"></i>
-                    <textarea id="method" name="method" type="text" 
+                    <textarea id="method" name="method" 
                         class="materialize-textarea validate" required></textarea>
                     <label for="method">Recipe Method - place each step on a new line</label>
                 </div>

@@ -18,27 +18,25 @@
                     <!-- recipe image -->
                     <div class="card-image">
                         {% if recipe.recipe_image %}
-                            <img src="{{ recipe.recipe_image }}">
+                            <img src="{{ recipe.recipe_image }}" alt="{{ recipe.image_alt }}">
                         {% else %}
-                            <img src="../static/images/standard-recipe-image.jpg">
+                            <img src="../static/images/standard-recipe-image.jpg" alt="fettucini being fed through the pasta maker">
                         {% endif %}                  
                     </div>
                     <!-- card details -->
                     <div class="card-stacked">
                         <div>
                             <span class="card-title">
-                                <strong>{{ recipe.recipe_name }}</strong>                          
+                                {{ recipe.recipe_name }}                          
                             </span>
-                            <span>                  
+                            <!-- <span>-->
                                 <p>
                                     <span class="created-by s12 green">by:</span> {{ recipe.created_by }} 
                                     <strong class="category-name s12"><span class="green">
                                         Course:</span> 
                                         {{ recipe.category }}
                                     </strong>
-                                </p>
-                            </span> 
-                            <span>
+                                </p>                           
                                 <p>
                                     <strong class="timing s12">Prep Time:</strong> {{ recipe.prep_time }}
                                 </p>
@@ -47,7 +45,6 @@
                                 </p>
                                     <strong class="servings s12">Servings:</strong> {{ recipe.servings }}
                                 </p>
-                            </span>
                             <!-- card action -->
                             <div class="card-action">
                                 {% if session.user|lower == recipe.created_by|lower %}

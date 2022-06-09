@@ -8,9 +8,9 @@
             <div class="col s12 m4">
                 <div class="full-recipe-image">
                     {% if recipe.recipe_image %}
-                        <img src="{{ recipe.recipe_image }}">
+                        <img src="{{ recipe.recipe_image }}" alt="{{ recipe.image_alt }}">
                     {% else %}
-                        <img src="../static/images/standard-recipe-image.jpg">
+                        <img src="../static/images/standard-recipe-image.jpg" alt="fettucini being fed through the pasta maker">
                     {% endif %}                          
                 </div>
             </div>
