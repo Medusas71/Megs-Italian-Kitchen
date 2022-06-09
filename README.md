@@ -274,12 +274,15 @@ The Edit Recipe Page features:
 
 **Programs and Resources**
 
+1. [Am I Responsive](https://ui.dev/amiresponsive) - to create a Home Page image on each device for use in the Readme file
+1. [Autoprefixer CSS Online](https://autoprefixer.github.io/) - to ensure all vendor prefixes were included in CSS
 1. [Balsamiq](https://balsamiq.com/) - wireframes
 1. [Code Institute Course Content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
 1. [Img 2 Go](https://www.img2go.com/compress-image) - to compress the home page image
 1. [Coolors](https://coolors.co/) - to display colour palette
+1. [Favicon Generator](https://favicon.io/emoji-favicons/) - to generate the favicon
 1. [Font Awesome](https://fontawesome.com/v5/search) - for their icons
-1. [Freepik](https://www.freepik.com/home) - for the home page image
+1. [Freepik](https://www.freepik.com/home) - for the home page image and 404 error
 1. [Git](https://git-scm.com/) - version control
 1. [GitHub](https://github.com/) - used to store the project files
 1. [Gitpod](https://www.gitpod.io/) - IDE
@@ -288,6 +291,8 @@ The Edit Recipe Page features:
 1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture and resizing images
 1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
 1. [Unsplash](https://unsplash.com/) - for the standard recipe image
+1. [W3Schools](https://www.w3schools.com/) - to assist with the code
+1. [Wave](https://wave.webaim.org/) - to ensure the content was accessible
 1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
 
 [Back to Table of Contents](#table-of-contents)
