@@ -50,7 +50,6 @@ nav {
 }
 
 nav .brand-logo {
-    margin-left: 20px;
     font-size: 1rem;
 }
 
@@ -68,6 +67,10 @@ nav a {
 
 .text-shadow {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
+}
+
+.center-align {
+    align-items: center;
 }
 
 /*---------------------- Flash Messages */
@@ -293,6 +296,10 @@ img {
     .index-text,
     .index-title {
         margin-left: 50px;
+    }
+
+    nav .brand-logo {
+        margin-left: 20px;
     }
 }
 
