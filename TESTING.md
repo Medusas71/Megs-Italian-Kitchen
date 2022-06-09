@@ -26,11 +26,36 @@
 <a id="testing"></a>
 # Testing
 
+Testing was conducted manually and through different validator services on each page of the website.
+
 <a id="validators"></a>
 ## Validators
 
+* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_uri) was used on each page to 
+ensure that there were no errors or warnings in my HTML document. I originally used the Direct Input, 
+however I was getting jinja errors, as the HTML didn't like the Jinja code in Direct Input. So I used 
+the Validate by URI, which ignored the jinja code and gave me a true indication of any errors, which 
+there was none.
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to ensure 
+that there were no errors or warnings in my CSS document and was validated by direct input. I had no errors 
+or warnings display.
+
+![W3C CSS Validation Results](/static/images/testing-images/w3c-css-validator-results.jpg)
+
+* [Autoprefixer CSS Online](https://autoprefixer.github.io/) was used to ensure that all vendor prefixes 
+were included in CSS. the results were copied into the style.css file.
+
+* [Pep8]
+
 <a id="lighthouse"></a>
 ## Lighthouse  
+
+Lighthouse was used to check for any problems on all pages.
+
+Below is the lighthouse score for each page on mobile and desktop:
+
+<summary><b>(click to expand or hide)</b></summary>
 
 <a id="wave"></a>
 ## Wave Report  
