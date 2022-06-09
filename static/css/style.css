@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Simonetta&display=swap');
 
 /*---------------------- Global Settings */
@@ -5,8 +12,13 @@
 html, body {
     /*------ assist with keeping footer in place - See bugs/fixes in TESTING.md */
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .green {
@@ -70,7 +82,9 @@ nav a {
 }
 
 .center-align {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*---------------------- Flash Messages */
@@ -136,8 +150,13 @@ h1 {
 }
 
 .card-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 300px;
 }
 
@@ -298,7 +317,6 @@ img {
     .index-title {
         margin-left: 50px;
     }
-
 }
 
 /*----------------------- extra extra large devices (extra large desktops, 1920px and up) */
