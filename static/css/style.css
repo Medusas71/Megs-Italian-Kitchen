@@ -103,12 +103,12 @@ footer {
     background: url(../images/spice-pasta-lunch-top-fresh.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
 }
 
 .homepage {
     padding-top: 100px;
     color: white;
+    background-color: #f4f5f0;
 }
 
 h1 {
