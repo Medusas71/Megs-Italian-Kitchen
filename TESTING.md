@@ -79,3 +79,6 @@ I removed the class of container from the base.html page and added it directly t
 I was having issues with the ingredients and steps displaying on one line each. All of my ingredients and steps were next to each other in a big row.
 * **FIX**:
 I searched Slack for other peoples recipe cookbooks and found [My Ruby's Kitchen](http://ms3-recipe.herokuapp.com/home) who had the ingredients and steps in the same way that I wanted the page to be laid out. I followed her code to organise my ingredients and steps on the page by using splitlines.
+
+**Outstanding bugs**
+On a mobile phone I have an extra [dropdown menu displayed in blue carots ^](./static/images/testing-images/edit-recipe-bug.jpg) on the Add Recipe and Edit Recipe pages. I am yet to find a way to remove these extra characters off the screen. As it doesn't affect the ability to complete the form, this bug will be further looked into at a later stage.
