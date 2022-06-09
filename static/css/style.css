@@ -280,6 +280,10 @@ img {
         font-size: 2.2rem;
     }
 
+    nav .brand-logo {
+        margin-left: 20px;
+    }
+
     .index-text,
     .index-title {
         margin-left: 50px;
@@ -295,9 +299,6 @@ img {
         margin-left: 50px;
     }
 
-    nav .brand-logo {
-        margin-left: 20px;
-    }
 }
 
 /*----------------------- extra extra large devices (extra large desktops, 1920px and up) */
