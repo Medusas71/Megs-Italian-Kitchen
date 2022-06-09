@@ -73,3 +73,9 @@ As I was using Materialize in my project, the class of container had its own sty
 * **Fix**:
 I removed the class of container from the base.html page and added it directly to the pages that I wanted to use that styling on. Then I could make my home page have a width of 100%.
 
+**Full Recipes Page**
+
+**1. Issue**:
+I was having issues with the ingredients and steps displaying on one line each. All of my ingredients and steps were next to each other in a big row.
+* **FIX**:
+I searched Slack for other peoples recipe cookbooks and found [My Ruby's Kitchen](http://ms3-recipe.herokuapp.com/home) who had the ingredients and steps in the same way that I wanted the page to be laid out. I followed her code to organise my ingredients and steps on the page by using splitlines.
