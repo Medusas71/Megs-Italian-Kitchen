@@ -146,6 +146,7 @@ was chosen as Simonetta is a serif font and Open Sans is a sans serif font and t
 Imagery
 
 * The homepage image was sourced from [freepik](https://www.freepik.com/free-photo/spice-pasta-lunch-top-fresh_1087766.htm#query=italian%20cuisine&position=2&from_view=keyword) - See Media in Credits for attribution.
+* The 404 vector created by [freepik](https://www.freepik.com/vectors/404)
 * See [Credits](#credits) for all recipe images.
 
 [Back to Table of Contents](#table-of-contents)
