@@ -156,6 +156,83 @@ Imagery
 <a id="current-features"></a>
 **Current Features**
 
+Each page features:
+
+* A consistent navbar
+* A copyright and developed by on the footer of each page.
+
+The Home Page features:
+
+* A link to browse the recipes
+* A link to register to add your own recipes.
+
+The Recipes Page features:
+
+* A search bar where users can search by recipe names and ingredients
+* An image of the recipe, if the user does not include an image then a default image displays
+* The name of the recipe
+* Who the recipe was added by
+* The recipe course, which is either Entree, Main or Dessert
+* The preparation time
+* The cooking time
+* How many servings this recipe caters for 
+* A link to view the full recipe.
+
+The Full Recipe Page features:
+
+* An image of the recipe, unless the user did not include an image then a default image displays
+* The name of the recipe
+* Each ingredient displayed on a new line
+* Each step displayed on a new line.
+
+The Log In Page features:
+
+* An input field for Username
+* An input field for password
+* A Log In button
+* A link to Register if you aren't already registered.
+
+The Register Page features:
+
+* An input field for Username
+* An input field for password
+* A register button
+* A link to Log In if already registered.
+
+The Add Recipes Page features:
+
+* This page only displays once the user is logged in
+* The following input fields:
+  * Recipe Name - mandatory
+  * Select Category - either Entree, Main or Dessert - mandatory
+  * Preparation Time - mandatory
+  * Cooking Time - mandatory
+  * Servings, which you can only input numbers - mandatory
+  * Ingredients, after the first ingredient has been entered a user can click Enter and display the next ingredient on a new line - mandatory
+  * Recipe Method, after the first step has been entered a user can click Enter and display the next ingredient on a new line - mandatory
+  * A URL can be placed in the image field if the user decides to add an image. This line is not mandatory. If the user does not include an image a standard image displays.
+  * An Add Recipe button that adds the recipe to the database and the recipe displays in My Recipes.
+
+The My Recipes Page features:
+
+* This page only displays once the user is logged in
+* The users name displays at the top of the page
+* The name of the recipe
+* Who the recipe was added by, which will be the logged in user
+* The recipe course, which is either Entree, Main or Dessert
+* The preparation time
+* The cooking time
+* How many servings this recipe caters for 
+* A link to edit your own recipe
+* A link to delete your own recipe.
+
+The Edit Recipe Page features:
+
+* This page only displays once the user is logged in and has added recipes to the database
+* All the details about the recipe prepopulated
+* The user can edit any field that needs editing
+* A cancel button if the user decides they don't need to edit the recipe
+* A Save Recipe button so any changes can be saved in the Database.
 
 <a id="future-features"></a>
 **Future Features to implement**
