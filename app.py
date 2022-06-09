@@ -61,7 +61,7 @@ def register():
     Checks if registered user is in DB,
     if not add them to DB,
     if yes advise username already exists
-    """ 
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -107,10 +107,12 @@ def login():
                 existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
-                return redirect(url_for("my_recipes", username=session["user"]))
+                return redirect(url_for(
+                        "my_recipes", username=session["user"]))
             else:
                 # invalid password match
-                # added category so text could change colour - see Readme credits
+                # added category so text could change
+                # colour - see Readme credits
                 flash("Incorrect Username and/or Password", category="red")
                 return redirect(url_for("login"))
 
