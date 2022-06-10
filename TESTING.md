@@ -36,35 +36,101 @@ ensure that there were no errors or warnings in my HTML document. I originally u
 however I was getting jinja errors, as the HTML didn't like the Jinja code in Direct Input. So I used 
 the Validate by URI, which ignored the jinja code and gave me a true indication of any errors or warnings.
 
-One warning displayed as per the below screenshot.
+  * One warning displayed as per the below screenshot.
 
-![W3C HTML Validation Results](/static/images/testing-images/w3c-html-validator-results.jpg)
+![W3C HTML Validation Results](/static/images/testing-images/w3c/w3c-html-validator-results.jpg)
 
-I spoke to Tutor Support regarding this error and they advised that I can ignore this error, as the error is referring to the "section" that is used for flash messages and will not contain any "heading" elements. 
+   * I spoke to Tutor Support regarding this error and they advised that I can ignore this error, as the error is referring to the "section" that is used for flash messages and will not contain any "heading" elements. 
 
-No other errors or warnings displayed.  
+  * No other errors or warnings displayed.  
 
-Tutor Support also showed me the best way to validate html, which is to right click on the web page and select "view page source" and copy the code from there and paste into the direct input section of the html checker. This way the jinja code is ignored by the html checker.
+  * Tutor Support also showed me the best way to validate html, which is to right click on the web page and select "view page source" and copy the code from there and paste into the direct input section of the html checker. This way the jinja code is ignored by the html checker.
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to ensure that there were no errors or warnings in my CSS document and was validated by direct input. I had no errors or warnings display.
 
-![W3C CSS Validation Results](/static/images/testing-images/w3c-css-validator-results.jpg)
+![W3C CSS Validation Results](/static/images/testing-images/w3c//w3c-css-validator-results.jpg)
 
 * [Autoprefixer CSS Online](https://autoprefixer.github.io/) was used to ensure that all vendor prefixes 
 were included in CSS. the results were copied into the style.css file.
 
 * [Pep8](http://pep8online.com/) was used to check the app.py file. No errors or warnings displayed.
 
-![pep8](/static/images/testing-images/pep8.jpg)
+![pep8](/static/images/testing-images/pep8/pep8.jpg)
 
 <a id="lighthouse"></a>
 ## Lighthouse  
 
-Lighthouse was used to check for any problems on all pages.
+Lighthouse was used to check for any problems on all pages. Unfortunately the scores were not as high as I would have liked. My heart sunk, especially as due to time restraints I haven't been able to look into these issues. It is something that will be addressed once the course is finished and I have more time to spend on each issue. 
+
+I did try to rectify one of the issues regarding image aspect ratio, where I installed "npm i --save-dev css-aspect-ratio" and imported the plain css using a cdn however that did not rectify the issue. I realise there is more that needs to be done and this will be addressed once the course is finished.
 
 Below is the lighthouse score for each page on mobile and desktop:
 
+<details open>
 <summary><b>(click to expand or hide)</b></summary>
+
+### index.html - mobile
+
+![index-mobile-lh](/static/images/testing-images/lighthouse/index-mobile-lh.jpg)
+
+### index.html - desktop
+
+![index-desktop-lh](/static/images/testing-images/lighthouse/index-desktop-lh.jpg)
+
+### recipes.html - mobile
+
+![recipes-mobile-lh](/static/images/testing-images/lighthouse/recipes-mobile-lh.jpg)
+
+### recipes.html - desktop
+
+![recipees-desktop-lh](/static/images/testing-images/lighthouse/recipes-desktop-lh.jpg)
+
+### full_recipe.html - mobile
+
+![full-recipe-mobile-lh](/static/images/testing-images/lighthouse/full-recipe-mobile-lh.jpg)
+
+### full_recipe.html - desktop
+
+![full-recipe-desktop-lh](/static/images/testing-images/lighthouse/full-recipe-desktop-lh.jpg)
+
+### login.html - mobile
+
+![login-mobile-lh](/static/images/testing-images/lighthouse/login-mobile-lh.jpg)
+
+### login.html - desktop
+
+![login-desktop-lh](/static/images/testing-images/lighthouse/login-desktop-lh.jpg)
+
+### register.html - mobile
+
+![register-mobile-lh](/static/images/testing-images/lighthouse/register-mobile-lh.jpg)
+
+### register.html - desktop
+
+![register-desktop-lh](/static/images/testing-images/lighthouse/register-desktop-lh.jpg)
+
+### add_recipe.html - mobile
+
+![add-recipe-mobile-lh](/static/images/testing-images/lighthouse/add-recipe-mobile-lh.jpg)
+
+### add_recipe.html - desktop
+
+![add-recipe-desktop-lh](/static/images/testing-images/lighthouse/add-recipe-desktop-lh.jpg)
+
+### my_recipes.html - mobile
+
+
+### my_recipes.html - desktop
+
+![my-recipes-desktop-lh](/static/images/testing-images/lighthouse/my-recipes-desktop-lh.jpg)
+
+### edit_recipe.html - mobile
+
+![edit-recipe-mobile-lh](/static/images/testing-images/lighthouse/edit-recipe-mobile-lh.jpg)
+
+### edit_recipe.html - desktop
+
+![edit-recipe-desktop-lh](/static/images/testing-images/lighthouse/edit-recipe-desktop-lh.jpg)
 
 <a id="wave"></a>
 ## Wave Report  
