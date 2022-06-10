@@ -142,6 +142,59 @@ Below is the lighthouse score for each page on mobile and desktop:
 <a id="wave"></a>
 ## Wave Report  
 
+* [Wave](https://wave.webaim.org/) was used to check for accessibility issues on all pages. Some errors have displayed such as empty links and contrast errors. The empty link is not an issue as it is to do with the mobile side nav. The contrast errors will be fixed after I finish the course due to time restraints.
+
+Below is the wave report for each page:
+
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
+
+### index.html
+
+![index-summary](/static/images/testing-images/wave/index-summary-wave.jpg)
+![index-details](static/images/testing-images/wave/index-details-wave.jpg)
+
+### recipes.html
+
+![recipes-summary](/static/images/testing-images/wave/recipes-summary-wave.jpg)
+![recipes-details](/static/images/testing-images/wave/recipes-details-wave.jpg)
+
+### full_recipe.html
+
+![full-recipe-summary](/static/images/testing-images/wave/full-recipe-summary-wave.jpg)
+![full-recipe-details](/static/images/testing-images/wave/full-recipe-details-wave.jpg)
+
+### login.html
+
+![login-summary](/static/images/testing-images/wave/login-summary-wave.jpg)
+![login-details](/static/images/testing-images/wave/login-details-wave.jpg)
+
+### register.html
+
+![register-summary](/static/images/testing-images/wave/register-summary-wave.jpg)
+![register-details](/static/images/testing-images/wave/register-details-wave.jpg)
+
+### add_recipe.html
+
+![add-recipe-summary](/static/images/testing-images/wave/add-recipe-summary-wave.jpg)
+![add-recipe-details](/static/images/testing-images/wave/add-recipe-details-wave.jpg)
+
+### my_recipes.html
+
+* Unfortunately Wave wouldn't accept a users own recipes. A Key Error displayed. This may have something to do with having to be logged in to view the page. Due to time restraints, this will be looked into once I have finished the course.
+
+![my-recipe-error](/static/images/testing-images/wave/my-recipe-key-error-wave.jpg)
+
+### edit_recipe.html
+
+![edit-recipe-summary](/static/images/testing-images/wave/edit-recipe-summary-wave.jpg)
+![edit-recipe-details](/static/images/testing-images/wave/edit-recipe-details-wave.jpg)
+
+</details>
+
+[Back to Table of Contents](#table-of-contents)
+
+
 <a id="user-stories"></a>
 ## User Stories 
 
