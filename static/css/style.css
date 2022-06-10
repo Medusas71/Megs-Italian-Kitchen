@@ -201,6 +201,7 @@ img {
     padding: 0;
     font-family: "Open SansS", sans-serif;
     color: #007a3d;
+    text-align: center;
 }
 
 .card-action {
@@ -219,10 +220,6 @@ img {
 
 /*---------------------- Full Recipe */
 
-.full-recipe-margin {
-    margin: 100px;
-}
-
 .background-colour {
     background-color: #f4f5f0;
 }
@@ -230,8 +227,9 @@ img {
 .full-recipe-image {
     width: 300px;
     height: auto;
+    margin: auto;
     margin-top: 50px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .recipe-ingredients {
@@ -275,6 +273,11 @@ img {
     .input-field>label {
         font-size: 1rem;
     }
+
+    .full-recipe-margin {
+        margin: 100px;
+    }
+    
 }
 
 /*---------------------- medium devices (tablets, 768px and up) */
@@ -316,6 +319,12 @@ img {
     .index-text,
     .index-title {
         margin-left: 50px;
+    }
+
+    .full-recipe-image {
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 20px;
     }
 }
 
