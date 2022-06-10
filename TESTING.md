@@ -265,17 +265,73 @@ Each screenshot displays a red square around each item that is needed to achieve
 [Back to Table of Contents](#table-of-contents)
 
 <a id="manual-testing"></a>
-## Manual testing of all elements and functionality on every page  
+## Manual testing of all elements and functionality on every page 
+
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
 
 ### Browsers tested:
 
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Opera
+* Safari
+
+No errors were found on the above browsers.
+
 ### Devices tested:
+
+* iPhone 12
+* iPhone 11
+
+
 
 | Page      | Section       | Action        | Expected Behaviour     | Result   |  
 | --------- | ------------- | ------------- | ---------------------- | -------- |
-
+| Home Page | Tab at top of page | On a desktop go to https://megs-italian-kitchen.herokuapp.com/index | The Home Page displays; there is a MIK favicon displaying in the tab; the tab is named Meg's Italian Kitchen | Pass |
+|           | Navigation Bar | The name "Meg's Italian Kitchen" with "Meg's" being in green, "Italian" being in red, "Kitchen" being in Green displays on the left hand side | The name "Meg's Italian Kitchen in the correct colours displays | Pass |
+|           |               | Confirm 4 navigation links display, which include: Home (which is in green), Recipes (which is in red), Log In (which is in green) and Register (which is in red) | 4 navigation links display | Pass |
+|           |               | Click each navigation link | The correct corresponding page displays | Pass |
+|           | Main  | Confirm the hero image of cheese on a cheese board, tomatoes and pasta display | The hero image displays | Pass |
+|           |       | Confirm the home page text displays | The home page text displays with links to Browse and Register | Pass |
+|           | Footer | Confirm the "copyright" information and the "developed by" information display in the middle of the footer | Copyright and developed by information displays in the middle of the footer | Pass |
+|           | Responsiveness | Go to Dev Tools and confirm the page displays correctly when you reduce and expand the margins | The correct page displays | Pass |
+|           |           | Change the pixels to 992px | The hamburger menu displays | Pass |
+|           |           | Click the hamburger menu | The Name of the website and 4 links display being Home (which is in green), Recipes (which is in red), Log In (which is in green), Register (which is in red) | Pass |
+| Recipes Page | Main | On a desktop go to https://megs-italian-kitchen.herokuapp.com/get_recipes | The All Recipes Page displays with a search bar and a reset and search links | Pass |
+|           |           | Type in Spaghetti in the search bar | The recipe spaghetti bolognese displays | Pass |
+|           |           | Confirm the recipes display on the page | The recipe displays with a photo of the recipe, the name of the recipe, who created the recipe, the course, the prep time, the cook time, servings and a link to View full recipe display | Pass |
+|           |           | Click View Full Recipe | The image of the recipe, the name of the recipe, the ingredients and steps display | Pass |
+| Log In Page | Main | On a desktop go to https://megs-italian-kitchen.herokuapp.com/login | The Log In Page displays | Pass |
+|           |       | There is a prompt for Username and Password | The prompts display | Pass |
+|           |       | Click the Log In link | A prompt displays on the Username to ask you to complete the field | Pass |
+|           |       | Type a Username and click Log In | A prompt displays on the Password to ask you to complete the field | Pass |
+|           |       | There is a link underneath the Log In button to Register Account | The Register Account link displays | Pass |
+|           |       | Click the Register Account link | The Register page displays | Pass |
+|           |       | The title Register displays | The title displays | Pass |
+|           |       | There is a prompt for Username and Password | The prompts display | Pass |
+|           |       | Click the Register button | A prompt displays on the Username to ask you to complete the field | Pass |
+|           |       | Type a Username and click Log In | A prompt displays on the Password asking you to complete the field | Pass |
+|           |       | There is a link underneath the Register button to Log In | Clicking the link displays the Log In Page | Pass |
+| Register Page | Main | Enter a Username and Password and click Register | You are taken to the My Recipes page and a Registration Successful displays | Pass |
+|           |       | Click the Log Out button | You have been logged out displays | Pass |
+| Log In Page | Main | Enter the Username and Password that you registered with | You are taken to the My Recipes page | Pass |
+| Add Recipe Page | Main | Click the Add Recipes link | The Add Recipe Page displays | Pass |
+|           | Main | The Add Recipe form displays | The sections to complete are Recipe Name, Select Category (which is either entree, main or dessert), Preparation time, Cooking Time, Servings (which is numbers only), Ingredients, Recipe Method and there is a part to Add an Image URL that isn't mandatory | Pass |
+|           |       | Click Add Recipe | The All Recipes page displays with a prompt stating the Recipe Successfully Added | Pass |
+| My Recipes Page | Main | Click the My Recipes link | The users name displays at the top of the page, the recipe that was added displays with an edit and delete button | Pass |
+|           |       | Click the Edit button | The Edit Recipe page displays with all the fields populated | Pass |
+|           |       | Go to the bottom of the page and click Cancel | The All Recipes page displays | Pass |
+|           |       | Go back to the My Recipes page | The username's Recipe page displays | Pass |
+|           |       | Click the Edit button | The Edit Recipe page displays with all the fields populated | Pass |
+|           |       | Make a change to the recipe and click Save Recipe | The All Recipes page displays and the change has been saved, you may have to click View Full Recipe to see some changes, all depends on where you made the change, A flash message stating the Recipe has been Successfully Updated displays | Pass |
+|           |       | Click My Recipes and delete the recipe that you created | The All Recipes page displays with a message stating the Recipe has been Successfully Deleted | Pass |
+|           |       | Click My Recipes | The recipe has been deleted | Pass |
 
 </details> 
+
+[Back to Table of Contents](#table-of-contents)
 
 <a id="bugs-fixes"></a>
 ## Bugs/Fixes  
