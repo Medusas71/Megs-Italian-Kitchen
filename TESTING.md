@@ -34,19 +34,28 @@ Testing was conducted manually and through different validator services on each 
 * [W3C Markup Validation Service](https://validator.w3.org/#validate_by_uri) was used on each page to 
 ensure that there were no errors or warnings in my HTML document. I originally used the Direct Input, 
 however I was getting jinja errors, as the HTML didn't like the Jinja code in Direct Input. So I used 
-the Validate by URI, which ignored the jinja code and gave me a true indication of any errors, which 
-there was none.
+the Validate by URI, which ignored the jinja code and gave me a true indication of any errors or warnings.
 
-* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to ensure 
-that there were no errors or warnings in my CSS document and was validated by direct input. I had no errors 
-or warnings display.
+One warning displayed as per the below screenshot.
+
+![W3C HTML Validation Results](/static/images/testing-images/w3c-html-validator-results.jpg)
+
+I spoke to Tutor Support regarding this error and they advised that I can ignore this error, as the error is referring to the "section" that is used for flash messages and will not contain any "heading" elements. 
+
+No other errors or warnings displayed.  
+
+Tutor Support also showed me the best way to validate html, which is to right click on the web page and select "view page source" and copy the code from there and paste into the direct input section of the html checker. This way the jinja code is ignored by the html checker.
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to ensure that there were no errors or warnings in my CSS document and was validated by direct input. I had no errors or warnings display.
 
 ![W3C CSS Validation Results](/static/images/testing-images/w3c-css-validator-results.jpg)
 
 * [Autoprefixer CSS Online](https://autoprefixer.github.io/) was used to ensure that all vendor prefixes 
 were included in CSS. the results were copied into the style.css file.
 
-* [Pep8]
+* [Pep8](http://pep8online.com/) was used to check the app.py file. No errors or warnings displayed.
+
+![pep8](/static/images/testing-images/pep8.jpg)
 
 <a id="lighthouse"></a>
 ## Lighthouse  
