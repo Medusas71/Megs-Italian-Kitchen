@@ -194,9 +194,75 @@ Below is the wave report for each page:
 
 [Back to Table of Contents](#table-of-contents)
 
-
 <a id="user-stories"></a>
 ## User Stories 
+
+### Testing User Stories from the UX section of [the main README.md document](README.md)
+
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
+
+Each screenshot displays a red square around each item that is needed to achieve the testing criteria.
+
+### First Time Visitor Goals
+
+* As a first time visitor to the website, I would like to search for Italian recipes.
+  * This is achieved by clicking the Browse link on the home page or the Recipes link in the nav bar. Once you are on the All Recipes page you can search by recipe title, course and ingredients.
+
+![1-browse-recipes](/static/images/testing-images/user-stories/1-browse-recipes-links.jpg)
+
+![2-search-links](/static/images/testing-images/user-stories/2-search-links.jpg)
+
+* As a first time visitor to the website, I would like to view various Italian recipes.
+  * This is achieved by clicking the Recipes link in the nav bar and scrolling through the recipes. The visitor has an option to view the full recipe details.
+
+![3-view-full-recipe](/static/images/testing-images/user-stories/3-view-full-recipe-link.jpg)
+
+![4-full-recipe](/static/images/testing-images/user-stories/4-full-recipe.jpg)
+
+* As a first time visitor to the website, I would like to be able to have the opportunity to register so I can add new recipes to the database.
+  * This is achieved by having a Register link on the home page and in the nav bar that allows the user to Register.
+
+![5-register](/static/images/testing-images/user-stories/5-register-links.jpg)
+
+![6-register](/static/images/testing-images/user-stories/6-register.jpg)
+
+### Returning Visitor Goals
+
+* As a returning user to the website, I would like to have the ability to log in so I can view my recipes.
+  * This is achieved by clicking the Log In link on the nav bar, logging in and clicking My Recipes.
+
+![7-login](/static/images/testing-images/user-stories/7-login.jpg)
+
+![8-my-recipes](/static/images/testing-images/user-stories/8-my-recipes.jpg)
+
+* As a returning visitor to the website, I would like to have the ability to search for recipes whilst logged in.
+  * This is achieved by clicking the Recipes link in the nav bar. Once you are on the All Recipes page you can search by recipe title, course and ingredients.
+
+![9-search](/static/images/testing-images/user-stories/9-search-recipes.jpg)
+
+* As a returning visitor to the website, I would like to have the ability to add a recipe.
+  * This is achieved by clicking the Add Recipes link on the nav bar and adding details about the recipe.
+
+![10-add-recipe](/static/images/testing-images/user-stories/10-add-recipe.jpg)
+
+* As a returning visitor to the website, I would like to have the ability to amend the recipe as required.
+  * This is achieved by clicking the My Recipes link in the nav bar and clicking Edit on your recipe, making the necessary changes and saving the recipe.
+
+![11-edit-recipe](/static/images/testing-images/user-stories/11-edit-recipe-links.jpg)
+
+![12-edit-recipe](/static/images/testing-images/user-stories/12-edit-recipe.jpg)
+
+![13-save-recipe](/static/images/testing-images/user-stories/13-save-recipe.jpg)
+
+* As a returning visitor to the website, I would like to have the ability to delete my own recipes.
+  * This is achieved by clicking the My Recipes link in the nav bar and clicking Delete on your recipe.
+
+![14-delete-recipe](/static/images/testing-images/user-stories/14-delete-recipe.jpg)
+
+</details>
+
+[Back to Table of Contents](#table-of-contents)
 
 <a id="manual-testing"></a>
 ## Manual testing of all elements and functionality on every page  
