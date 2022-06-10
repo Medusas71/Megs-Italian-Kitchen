@@ -139,6 +139,7 @@ h1 {
 
 .index-title {
     margin-left: 20px;
+    margin-right: 50px;
 }
 
 /*---------------------- Recipe Cards */
@@ -273,10 +274,12 @@ img {
     .index-text {
         font-size: 1.5rem;
         margin-left: 50px;
+        margin-right: 200px;
     }
 
     .index-title {
         margin-left: 50px;
+        margin-right: 200px;
     }
 
     .input-field>label {
@@ -300,6 +303,7 @@ img {
     .index-text,
     .index-title {
         margin-left: 50px;
+        margin-right: 400px;
     }
 }
 
