@@ -57,6 +57,8 @@ were included in CSS. the results were copied into the style.css file.
 
 ![pep8](/static/images/testing-images/pep8/pep8.jpg)
 
+[Back to Table of Contents](#table-of-contents)
+
 <a id="lighthouse"></a>
 ## Lighthouse  
 
@@ -83,7 +85,7 @@ Below is the lighthouse score for each page on mobile and desktop:
 
 ### recipes.html - desktop
 
-![recipees-desktop-lh](/static/images/testing-images/lighthouse/recipes-desktop-lh.jpg)
+![recipes-desktop-lh](/static/images/testing-images/lighthouse/recipes-desktop-lh.jpg)
 
 ### full_recipe.html - mobile
 
@@ -119,6 +121,7 @@ Below is the lighthouse score for each page on mobile and desktop:
 
 ### my_recipes.html - mobile
 
+![my-recipes-mobile-lh](/static/images/testing-images/lighthouse/my-recipes-mobile-lh.jpg)
 
 ### my_recipes.html - desktop
 
@@ -131,6 +134,10 @@ Below is the lighthouse score for each page on mobile and desktop:
 ### edit_recipe.html - desktop
 
 ![edit-recipe-desktop-lh](/static/images/testing-images/lighthouse/edit-recipe-desktop-lh.jpg)
+
+</details>
+
+[Back to Table of Contents](#table-of-contents)
 
 <a id="wave"></a>
 ## Wave Report  
