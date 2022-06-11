@@ -34,7 +34,7 @@
 <!-- /Markdown TOC -->
 </details>
 
-![Final Website](./static/images/readme-images/final-webiste.jpg)
+![Final Website](./static/images/readme-images/final-website.jpg)
 
 <a id="description"></a>
 # Description  
@@ -44,7 +44,7 @@ to complete 4 milestone projects. Meg's Italian Kitchen is my 3rd milestone proj
 
 Meg's Italian Kitchen has been created for all lovers of Italian food.  
 The purpose of this website is to have a variety of Italian recipes display so people can create mouth watering meals. 
-The website will also accommodate for users that would like to add new recipes and amend and delete their own recipes when needed.
+The website will also accommodate for users that would like to add new recipes, amend and delete their own recipes when needed.
 
 [Back to Table of Contents](#table-of-contents)
 
