@@ -3,6 +3,8 @@
 <h3>Milestone Three Project - Python and Data Centric Development</h3>
 <br>
 
+[View the deployed Meg's Italian Kitchen](https://megs-italian-kitchen.herokuapp.com/index)
+
 **Please note: To open any links in this document in a new browser tab, press 'CTRL + Click'.**
 
 <a id=#table-of-contents></a>
@@ -31,6 +33,8 @@
 
 <!-- /Markdown TOC -->
 </details>
+
+![Final Website](./static/images/readme-images/final-webiste.jpg)
 
 <a id="description"></a>
 # Description  
