@@ -267,9 +267,6 @@ Each screenshot displays a red square around each item that is needed to achieve
 <a id="manual-testing"></a>
 ## Manual testing of all elements and functionality on every page 
 
-<details open>
-<summary><b>(click to expand or hide)</b></summary>
-
 ### Browsers tested:
 
 * Google Chrome
@@ -284,8 +281,18 @@ No errors were found on the above browsers.
 
 * iPhone 12
 * iPhone 11
+* iPhone XR
+* iPhone 7
+* Samsung Tablet S6
+* Samsung S20 Plus
+* Samsung Galaxy S10
+* Samsung A3
+* Motorola G9 Plus
 
+No errors were found when testing on the above devices.
 
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
 
 | Page      | Section       | Action        | Expected Behaviour     | Result   |  
 | --------- | ------------- | ------------- | ---------------------- | -------- |
