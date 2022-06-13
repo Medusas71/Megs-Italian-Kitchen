@@ -18,7 +18,6 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     """
@@ -38,7 +37,8 @@ def full_recipe(recipe_id):
     return render_template("full_recipe.html", recipes=recipes)
 
 
-@app.route("/index")
+@app.route("/")
+# @app.route("/index")
 def index():
     """ Home Page
     """
