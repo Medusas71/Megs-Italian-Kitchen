@@ -3,7 +3,7 @@
 <h3>Milestone Three Project - Python and Data Centric Development</h3>
 <br>
 
-[View the deployed Meg's Italian Kitchen](https://megs-italian-kitchen.herokuapp.com/index)
+[View the deployed Meg's Italian Kitchen](https://megs-italian-kitchen.herokuapp.com)
 
 **Please note: To open any links in this document in a new browser tab, press 'CTRL + Click'.**
 

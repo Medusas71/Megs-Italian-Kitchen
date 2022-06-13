@@ -38,7 +38,6 @@ def full_recipe(recipe_id):
 
 
 @app.route("/")
-# @app.route("/index")
 def index():
     """ Home Page
     """
