@@ -46,6 +46,8 @@ Meg's Italian Kitchen has been created for all lovers of Italian food.
 The purpose of this website is to have a variety of Italian recipes display so people can create mouth watering meals. 
 The website will also accommodate for users that would like to add new recipes, amend and delete their own recipes when needed.
 
+The final project was submitted 15/06/2022.
+
 [Back to Table of Contents](#table-of-contents)
 
 <a id="user-experience-(ux)"></a>
